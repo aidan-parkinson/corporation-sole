@@ -52,7 +52,8 @@ Items: {
     Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime.
   },
   Fringe Papers: {
-    class: UK Trademark,
+    class: Trademark of Great Britain and Northern Ireland,
+    authority: Intellectual Property Office,
     value: UK00003925191
   }
 }
