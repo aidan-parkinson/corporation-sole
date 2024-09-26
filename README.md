@@ -30,6 +30,16 @@ Properties:
 }
 
 Items: {
+  Aidan Thomas Parkinson: {
+    Class: Passport,
+    Authority: HMPO,
+    Surname: PARKINSON,
+    Given Names: AIDAN THOMAS,
+    Nationality: BRITISH CITIZEN,
+    Date of Birth: 30 MAY 1984,
+    Sex: M,
+    Place of Birth: ST ALBANS,
+  },
   Covenant of the Commonwealth of Peoples: {
     I hereby submit to the Earth's ecosystem and God's will over all it's inhabitants,
     I freely assume all properties of a Grand Master of the Commonwealth of Peoples,
@@ -52,8 +62,8 @@ Items: {
     Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime.
   },
   Fringe Papers: {
-    class: Trademark of Great Britain and Northern Ireland,
-    authority: Intellectual Property Office,
-    value: UK00003925191
+    Class: Trademark of Great Britain and Northern Ireland,
+    Authority: Intellectual Property Office,
+    Value: UK00003925191
   }
 }
