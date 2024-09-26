@@ -17,8 +17,7 @@ Properties:
     Secretary General: ,
     Treasurer: ,
     Council of Masters: {
-      Masters: {}
-      }
+Masters: {}
     },
     Companions: {}
   },
