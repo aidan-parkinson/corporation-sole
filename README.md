@@ -6,7 +6,7 @@ Properties:
   Motto: Humanity on Earth,
   Instruments: 
     {Commonwealth Cost of Carbon,
-    Commonwealth Real Estate Performance Indicator},
+    Commonwealth Real Estate Performance},
   Order: 
     {Sovereign: God,
     Founder: Aidan Thomas Parkinson,
