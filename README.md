@@ -45,10 +45,10 @@ Items: {
     I freely and independently assume all Properties of a Grand Master of the Commonwealth of Peoples,
     I recognise that I now represent comprehensive philisophical doctrine}
   },
-  Commonwealth Cost of Carbon: Calculated through dividing financial anthropogenic expenditure on enforcement by anthropogenic greenhouse gas emissions for a consistent time-period,
-  Commonwealth Real Estate Performance: Calculated through dividing: the product of Real Estate Performance Numerators and the total real estate service charge for a consistent time-period,
+  Commonwealth Cost of Carbon: Calculated through dividing financial expenditure on anthropogenic enforcement by anthropogenic greenhouse gas emissions for a consistent time-period,
+  Commonwealth Real Estate Performance: Calculated through dividing: the product of Real Estate Performance Numerators and the total financial real estate service charge for a consistent time-period,
   Real Estate Performance Numerators: {
-    Consumed anthropogenic greenhouse gas emissions of real estate service from source to end-use,
+    Anthropogenic greenhouse gas emissions of real estate service from source to end-use,
     Commonwealth Cost of Carbon
   },
   Principles of a Society of Peoples: {
