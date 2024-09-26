@@ -17,11 +17,7 @@ Properties:
     Secretary General: ,
     Treasurer: ,
     Council of Masters: {
-      Masters: {},
-      Properties: 
-        {Unindoctrinated,
-        Competent
-        }
+      Masters: {}
       }
     },
     Companions: {}
@@ -40,6 +36,9 @@ Items: {
     Sex: M,
     Place of Birth: ST ALBANS,
   },
+Masters: {
+Competent,
+Unindoctrinated},
   Covenant of the Commonwealth of Peoples: {
     I hereby submit to the Earth's ecosystem and God's will over all it's inhabitants,
     I freely and independently assume all Properties of a Grand Master of the Commonwealth of Peoples,
