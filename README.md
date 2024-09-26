@@ -16,9 +16,8 @@ Properties:
     Grand Master: Aidan Thomas Parkinson,
     Secretary General: ,
     Treasurer: ,
-    Council of Masters: {
-Masters: {}
-    },
+    Council of Masters: {},
+Masters: {},
     Companions: {}
   },
   Publisher: Fringe Papers}
