@@ -19,7 +19,7 @@ Properties:
     Masters: {},
     Companions: {}
   },
-  Publisher: Fringe Papers}
+  Publisher: Fringe Papers
 }
 
 Items: {
