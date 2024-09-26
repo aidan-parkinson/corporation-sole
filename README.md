@@ -15,7 +15,6 @@ Properties:
     Founder: Aidan Thomas Parkinson,
     Grand Master: Aidan Thomas Parkinson,
     Secretary General: ,
-    Treasurer: ,
     Council of Masters: {},
     Masters: {},
     Companions: {}
