@@ -25,5 +25,5 @@ Properties:
     },
     Companions: {}
   },
-  Publisher: Commonwealth Press}
+  Publisher: Fringe Papers}
 }
