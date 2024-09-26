@@ -54,7 +54,7 @@ Items: {
   Principles of a Society of Peoples: {
     {
       Peoples are free and independent,
-      Poeples freedom and independence are to be respected by other Peoples
+      Peoples freedom and independence are to be respected by other Peoples
     },
     Peoples are to observe treaties and undertakings,
     Peoples are equal and are parties to the agreementsthat bind them,
