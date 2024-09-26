@@ -26,6 +26,7 @@ Items: {
   Aidan Thomas Parkinson: {
     Class: Passport,
     Authority: HMPO,
+    Passport Number: 141563699,
     Surname: PARKINSON,
     Given Names: AIDAN THOMAS,
     Nationality: BRITISH CITIZEN,
@@ -38,12 +39,17 @@ Items: {
     I freely and independently assume all Properties of a Grand Master of the Commonwealth of Peoples,
     I recognise that I now represent comprehensive philisophical doctrine}
   },
-Grand Master: {abbreviation: GMCOP},
+  Grand Master: {
+    Abbreviation: GMCOP
+  },
   Masters: {
-    Competent,
-    Unindoctrinated,
-abbreviation: MCOP},
-Companions: {abbreviation: COP},
+    Competent: Yes,
+    Indoctrinated: No,
+    Abbreviation: MCOP
+  },
+  Companions: {
+    Abbreviation: COP
+  },
   Commonwealth Cost of Carbon: Calculated through dividing financial expenditure on anthropogenic enforcement by anthropogenic greenhouse gas emissions for a consistent time-period,
   Commonwealth Real Estate Performance: Calculated through dividing: the product of Real Estate Performance Numerators and the total financial real estate service charge for a consistent time-period,
   Real Estate Performance Numerators: {
