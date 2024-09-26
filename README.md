@@ -57,7 +57,7 @@ Items: {
       Peoples freedom and independence are to be respected by other Peoples
     },
     Peoples are to observe treaties and undertakings,
-    Peoples are equal and are parties to the agreementsthat bind them,
+    Peoples are equal and are parties to the agreements that bind them,
     Peoples are to observe a duty of non-intervention,
     Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense,
     Peoples are to honour human rights,
