@@ -50,5 +50,9 @@ Items: {
     Peoples are to honour human rights,
     Peoples are to observe certain specified restrictions in the conduct of war,
     Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime.
+  },
+  Fringe Papers: {
+    class: UK Trademark,
+    value: UK00003925191
   }
 }
