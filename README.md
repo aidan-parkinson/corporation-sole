@@ -43,8 +43,8 @@ Definitions: {
     Abbreviation: GMCOP
   },
   Masters: {
-    Competent: Yes,
-    Indoctrinated: No,
+    Competent: True,
+    Indoctrinated: False,
     Abbreviation: MCOP
   },
   Companions: {
