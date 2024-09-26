@@ -42,7 +42,7 @@ Items: {
   },
   Covenant of the Commonwealth of Peoples: {
     I hereby submit to the Earth's ecosystem and God's will over all it's inhabitants,
-    I freely and independently assume all properties of a Grand Master of the Commonwealth of Peoples,
+    I freely and independently assume all Properties of a Grand Master of the Commonwealth of Peoples,
     I recognise that I now represent comprehensive philisophical doctrine}
   },
   Commonwealth Cost of Carbon: Calculated through dividing financial anthropogenic expenditure on enforcement by anthropogenic greenhouse gas emissions for a consistent time-period,
