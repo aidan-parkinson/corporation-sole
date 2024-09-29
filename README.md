@@ -51,7 +51,7 @@ Definitions: {
     Abbreviation: COP
   },
   Commonwealth Cost of Carbon: Calculated through dividing financial expenditure on anthropogenic enforcement by anthropogenic greenhouse gas emissions for a consistent time-period,
-  Commonwealth Real Estate Performance: Calculated through dividing the product of Real Estate Performance Numerators by real estate service charge for a consistent time-period,
+  Commonwealth Real Estate Performance: Calculated through dividing the product of Real Estate Performance Numerators by financial expenditure on real estate services for a consistent time-period,
   Real Estate Performance Numerators: {
     Anthropogenic greenhouse gas emissions of real estate service from source to end-use,
     Commonwealth Cost of Carbon
