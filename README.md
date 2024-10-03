@@ -46,11 +46,11 @@ Definitions: {
   Masters: {
     Competent: True,
     Indoctrinated: False,
-    Abbreviation: MCOP
+    Abbreviation: MCOP,
     Class: Common Name
   },
   Companions: {
-    Abbreviation: COP
+    Abbreviation: COP,
     Class: Common Name
   },
   Commonwealth Cost of Carbon: Calculated through dividing financial expenditure on anthropogenic enforcement by anthropogenic greenhouse gas emissions for a consistent time-period,
