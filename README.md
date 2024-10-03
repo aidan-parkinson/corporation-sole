@@ -40,15 +40,18 @@ Definitions: {
     I recognise that I now represent comprehensive philisophical doctrine}
   },
   Grand Master: {
-    Abbreviation: GMCOP
+    Abbreviation: GMCOP,
+    Class: Common Name
   },
   Masters: {
     Competent: True,
     Indoctrinated: False,
     Abbreviation: MCOP
+    Class: Common Name
   },
   Companions: {
     Abbreviation: COP
+    Class: Common Name
   },
   Commonwealth Cost of Carbon: Calculated through dividing financial expenditure on anthropogenic enforcement by anthropogenic greenhouse gas emissions for a consistent time-period,
   Commonwealth Real Estate Performance: Calculated through dividing the product of Real Estate Performance Numerators by financial expenditure on real estate services for a consistent time-period,
