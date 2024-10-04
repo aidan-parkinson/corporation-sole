@@ -6,7 +6,8 @@ Properties:
   Belief: Covenant of the Commonwealth of Peoples,
   Motto: Humanity on Earth,
   Instruments: 
-    {Commonwealth Cost of Carbon,
+    {
+    Commonwealth Cost of Carbon,
     Commonwealth Real Estate Performance,
     Principles of a Society of Peoples},
   Order: 
