@@ -41,6 +41,7 @@ Definitions: {
     I recognise that I now represent comprehensive philisophical doctrine}
   },
   Grand Master: {
+    Indoctrinated: True,
     Abbreviation: GMCOP,
     Class: Common Name
   },
