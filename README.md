@@ -10,7 +10,7 @@ Properties:
     Commonwealth Cost of Carbon,
     Commonwealth Real Estate Performance,
     Principles of a Society of Peoples},
-  Order: 
+  Organisations: 
     {
     Sovereign: God,
     Founder: Aidan Thomas Parkinson,
