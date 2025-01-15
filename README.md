@@ -15,7 +15,7 @@ Properties:
     Sovereign: God,
     Founder: Aidan Thomas Parkinson,
     Grand Master: Aidan Thomas Parkinson,
-    Master of the Order: ,
+    Masters of the Order: {},
     Council of Masters: {},
     Masters: {},
     Companions: {}
