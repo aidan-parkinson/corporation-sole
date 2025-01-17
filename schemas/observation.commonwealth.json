@@ -2,7 +2,6 @@
     enforcement : {
         value : number,
         unit : Intl.NumberFormat.currency
-        }
     },
     activity : {
         value : number,
