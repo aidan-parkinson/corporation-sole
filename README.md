@@ -9,6 +9,6 @@ Grand Master of the Commonwealth of Peoples
 
 `./peoples` : role definitions.
 
-`./schemas` : data schemas for Observations channel.
+`./schemas` : data schemas for official Observations channel.
 
 `./state` : initial World State.
