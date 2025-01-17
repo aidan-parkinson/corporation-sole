@@ -7,10 +7,10 @@ Properties:
   Belief: Covenant of the Commonwealth of Peoples,
   Motto: Humanity on Earth,
   Instruments: {
-    /contracts,
-    /data,
-    /schemas,
-    /calculations
+    /contracts/.,
+    /data/.,
+    /schemas/.,
+    /calculations/.
   },
   Peoples: {
     Sovereign: God,
