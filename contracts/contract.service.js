@@ -1,6 +1,4 @@
 application: {
-    peer : Organization(MCOP);
-    client : Organization(COP);
     date.from : setUTCDate();
     date.to : setUTCDate();
     service.expenditure.value : number;
@@ -8,8 +6,7 @@ application: {
     service.activity.value : number;
     service.identity : Guid;
     service.owner : Organization;
-    update(observation.service.performance, peer,
-        client,
+    update(observation.service.performance,
         date.from,
         date.to,
         service.expenditure.value,
@@ -25,5 +22,5 @@ observation.service contract: {
 },
 observation.service.performance interface: {
     Transactions : update;
-    Endorsement Policy : Any observation.service.owner(MCOP);
+    Endorsement Policy :  Two Organization(MCOP);;
 }
