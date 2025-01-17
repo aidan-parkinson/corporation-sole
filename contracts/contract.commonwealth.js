@@ -18,7 +18,6 @@ observation.commonwealth contract: {
     update(observation.commonwealth):
         put(observation.commonwealth);
         return(observation.commonwealth);
-        return(principles);
 },
 observation.commonwealth interface: {
     Transactions : update;
