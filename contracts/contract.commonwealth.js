@@ -1,11 +1,11 @@
 application: {
-    peer : Organization(MCOP),
-    client : Organization(COP),
-    date.from : setUTCDate(),
-    date.to : setUTCDate(),
-    commonwealth.enforcement.value : number,
-    commonwealth.enforcement.unit : Intl.NumberFormat.currency(),
-    commonwealth.activity.value : number,
+    peer : Organization(MCOP);
+    client : Organization(COP);
+    date.from : setUTCDate();
+    date.to : setUTCDate();
+    commonwealth.enforcement.value : number;
+    commonwealth.enforcement.unit : Intl.NumberFormat.currency();
+    commonwealth.activity.value : number;
     update(observation.commonwealth, peer,
     client,
     date.from,
