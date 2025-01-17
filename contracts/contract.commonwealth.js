@@ -1,15 +1,15 @@
 application: {
     date.from : setUTCDate();
     date.to : setUTCDate();
-    commonwealth.enforcement.value : number;
-    commonwealth.enforcement.unit : Intl.NumberFormat.currency();
-    commonwealth.activity.value : number;
+    enforcement.value : number;
+    enforcement.unit : Intl.NumberFormat.currency();
+    activity.value : number;
     update(observation.commonwealth,
     date.from,
     date.to,
-    commonwealth.enforcement.value,
-    commonwealth.enforcement.unit,
-    commonwealth.activity.value);
+    enforcement.value,
+    enforcement.unit,
+    activity.value);
 },
 observation.commonwealth contract: {
     update(observation.commonwealth):
