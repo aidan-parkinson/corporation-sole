@@ -21,5 +21,5 @@ observation.commonwealth contract: {
 },
 observation.commonwealth interface: {
     Transactions : update;
-    Endorsement Policy : Any Organization(MCOP);
+    Endorsement Policy : Two Organization(MCOP);
 }
