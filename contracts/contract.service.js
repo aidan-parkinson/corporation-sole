@@ -1,19 +1,19 @@
 application: {
     date.from : setUTCDate();
     date.to : setUTCDate();
-    service.expenditure.value : number;
-    service.expenditure.unit : Intl.NumberFormat.currency();
-    service.activity.value : number;
-    service.identity : Guid;
-    service.owner : Organization;
-    update(observation.service.performance,
+    expenditure.value : number;
+    expenditure.unit : Intl.NumberFormat.currency();
+    activity.value : number;
+    identity : Guid;
+    owner : Organization;
+    update(observation.service,
         date.from,
         date.to,
-        service.expenditure.value,
-        service.expenditure.unit,
-        service.activity.value,
-        service.identity,
-        service.owner);
+        expenditure.value,
+        expenditure.unit,
+        activity.value,
+        identity,
+        owner);
 },
 observation.service contract: {
     update(observation.service):
