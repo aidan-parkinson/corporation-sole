@@ -5,10 +5,10 @@ Grand Master of the Commonwealth of Peoples
 
 `./calculations` : example calculations to inform initialisation of World State.
 
-`./contracts` : smart contracts to make official Observations.
+`./contracts` : smart contracts to make Official Observations.
 
 `./peoples` : role definitions.
 
-`./schemas` : data schemas for official Observations channel.
+`./schemas` : data schemas for Official Observations channel.
 
 `./state` : initial World State.
