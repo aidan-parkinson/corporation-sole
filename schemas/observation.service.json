@@ -1,0 +1,9 @@
+{
+    date : {
+        from : setUTCDate(),
+        to : setUTCDate(),
+    },
+    expenditure : {
+        
+    }
+}
