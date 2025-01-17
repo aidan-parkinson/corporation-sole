@@ -15,8 +15,4 @@ observation.commonwealth contract: {
     update(observation.commonwealth):
         put(observation.commonwealth);
         return(observation.commonwealth);
-},
-observation.commonwealth interface: {
-    Transactions : update;
-    Endorsement Policy : Two Organization(MCOP);
 }

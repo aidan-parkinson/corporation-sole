@@ -19,8 +19,4 @@ observation.service contract: {
     update(observation.service):
         put(observation.service);
         return(observation.service);
-},
-observation.service.performance interface: {
-    Transactions : update;
-    Endorsement Policy :  Two Organization(MCOP);;
 }
