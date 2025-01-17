@@ -1,0 +1,17 @@
+{
+    Readers:
+        Type: ImplicitMeta,
+        Rule: "ANY Readers",
+    Writers:
+        Type: ImplicitMeta,
+        Rule: "ANY Writers",
+    Admins:
+        Type: ImplicitMeta,
+        Rule: "ANY GMCOP",
+    LifecycleEndorsement:
+        Type: ImplicitMeta,
+        Rule: "Any GMCOP",
+    Endorsement:
+        Type: ImplicitMeta,
+        Rule: "OutOf(2, "MCOP", "GMCOP")"
+}
