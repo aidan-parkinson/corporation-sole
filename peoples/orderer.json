@@ -1,3 +1,4 @@
 {
     role: "Orderer",
+    alias: "Orderer"
 }
