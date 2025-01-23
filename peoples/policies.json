@@ -1,17 +1,22 @@
 {
-    Readers:
-        Type: ImplicitMeta,
-        Rule: "ANY Readers",
-    Writers:
-        Type: ImplicitMeta,
-        Rule: "ANY Writers",
-    Admins:
-        Type: ImplicitMeta,
-        Rule: "ALL GMCOP",
-    LifecycleEndorsement:
-        Type: ImplicitMeta,
-        Rule: "ALL GMCOP",
-    Endorsement:
-        Type: ImplicitMeta,
-        Rule: "OutOf(2, "MCOP")"
+    "Readers": {
+        "Type": "ImplicitMeta",
+        "Rule": "ANY Readers"
+    },        
+    "Writers": {
+        "Type": "ImplicitMeta",
+        "Rule": "ANY Writers"
+    },
+    "Admins": {
+        "Type": "ImplicitMeta",
+        "Rule": "ALL GMCOP"
+    },
+    "LifecycleEndorsement": {
+        "Type": "ImplicitMeta",
+        "Rule": "ALL GMCOP"
+    },
+    "Endorsement": {
+        "Type": "ImplicitMeta",
+        "Rule": "OutOf(2, MCOP)"
+    }   
 }
