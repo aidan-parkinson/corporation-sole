@@ -2,9 +2,10 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://example.com/product.schema.json",
     "title": "Service",
-    "description": "A contract for Commonwealth of Peoples service performance observations",
+    "description": "A contract for Commonwealth of Peoples service rating observations",
     "type": "object",
     "properties": {
+        "required": ["Guid", "enforcement", "activity", "performance", "time", "principles", "production", "externalities", "rating"],
         "Guid": {
             "description": "Globally Unique Identifier of agreed observation",
             "type": "string"
