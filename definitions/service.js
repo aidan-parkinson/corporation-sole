@@ -69,9 +69,9 @@ func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) 
       Guid crypto.randomUUID(),
       PerformanceValue 0.13958,
       PerformanceUnit "$kgCO2e",
-      ProductionValue int 1367798.11
-      ProductionUnit string Intl.NumberFormat.currency(GBP)
-      ExternalitiesValue int 444474.72
+      ProductionValue 1367798.11
+      ProductionUnit Intl.NumberFormat.currency(GBP)
+      ExternalitiesValue 444474.72
       ExternalitiesUnit "kgCO2e"
       RatingValue 0.0365,
       Principles principles,
