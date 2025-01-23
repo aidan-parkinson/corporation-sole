@@ -326,8 +326,6 @@ func (s *SmartContract) CreateEcosystem(ctx contractapi.TransactionContextInterf
     activity.value int,
     enforcement.value int,
     enforcement.unit string,
-    performance.value int,
-    performance.unit string,
     time.to int,
     time.from int)
   
