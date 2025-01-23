@@ -5,6 +5,7 @@
         "description": "A contract for Commonwealth of Peoples ecosystem performance observations",
         "type": "object",
         "properties": {
+            "required": ["Guid", "enforcement", "activity", "performance", "time", "principles"],
             "Guid": {
                 "description": "Globally Unique Identifier of agreed observation",
                 "type": "string"
@@ -24,6 +25,7 @@
             },
             "activity" : {
                 "type": "object",
+                "description": "Total anthropogenic activity",
                     "properties": {
                         "description": "Total anthropogenic greenhouse gas emissions",
                         "value": {
@@ -38,6 +40,7 @@
             },
             "performance" : {
                 "type": "object",
+                "description": "A cardinal observation of ecosystem performance",
                     "properties": {
                         "value": {
                             "description": "ecosystem.enforcement.value / ecosystem.activity.value",
@@ -51,6 +54,7 @@
             },
             "time": {
                 "type": "object",
+                "description": "The time of the performance observation",
                     "properties": {
                         "from": {
                             "description": "The corresponding setUTCDate() for the beginning of the observation time",

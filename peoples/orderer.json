@@ -1,4 +1,4 @@
 {
-    role: "Orderer",
-    alias: "Orderer"
+    "role": "Orderer",
+    "alias": "Orderer"
 }

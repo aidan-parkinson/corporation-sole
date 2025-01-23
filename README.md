@@ -3,9 +3,9 @@ Grand Master of the Commonwealth of Peoples
 
 ## Properties
 
-`./calculations` : example calculations to inform initialisation of World State.
+`./calculations` : example calculations to inform commissioning of Sovereign network.
 
-`./contracts` : smart contracts to make official Observations.
+`./definitions` : smart contracts to make official Observations.
 
 `./peoples` : role definitions.
 

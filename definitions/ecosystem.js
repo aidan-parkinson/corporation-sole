@@ -32,7 +32,7 @@ type Ecosystem struct {
 // InitLedger adds a base set of ecosystems to the ledger
 func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) error {
   ecosystems := []Ecosystem{
-    //Add anyexamples
+    //Add any examples
   }
 
   for _, ecosystem := range ecosystems {
