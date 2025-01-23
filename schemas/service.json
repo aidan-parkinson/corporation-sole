@@ -1,0 +1,119 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Service",
+    "description": "A contract for Commonwealth of Peoples service rating observations",
+    "type": "object",
+    "properties": {
+        "required": ["Guid", "enforcement", "activity", "performance", "time", "principles", "production", "externalities", "rating"],
+        "Guid": {
+            "description": "Globally Unique Identifier of agreed observation",
+            "type": "string"
+        },
+        "enforcement" : {
+            "description": "Total anthropogenic expenditures on enforcement",
+            "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "A quantity measured in current prices",
+                        "type": "number"
+                    },
+                    "unit": {
+                        "type": "The Intl.NumberFormat.currency() that corresponds with the quantity"
+                    }
+                }
+        },
+        "activity" : {
+            "type": "object",
+            "description": "Total anthropogenic activity",
+                "properties": {
+                    "description": "Total anthropogenic greenhouse gas emissions",
+                    "value": {
+                        "description": "A quantity in math.unit('kgCO2e')",
+                        "type": "number"
+                    },
+                    "unit": {
+                        "description": "The math.unit() that corresponds with the quantity",
+                        "type": "string"
+                    }
+                }
+        },
+        "performance" : {
+            "type": "object",
+            "description": "A cardinal observation of ecosystem performance",
+                "properties": {
+                    "value": {
+                        "description": "ecosystem.enforcement.value / ecosystem.activity.value",
+                        "type": "number"
+                    },
+                    "unit": {
+                        "description": "concat(ecosystem.enforcement.unit, ecosystem.activity.unit)",
+                        "type": "string"
+                    }
+                }
+        },
+        "time": {
+            "type": "object",
+            "description": "The time of the performance observation",
+                "properties": {
+                    "from": {
+                        "description": "The corresponding setUTCDate() for the beginning of the observation time",
+                        "type": "number"
+                    },
+                    "to": {
+                        "description": "The corresponding setUTCDate() for the end of the observation time",
+                        "type": "number"
+                    }
+                }
+        },
+        "production" : {
+            "type": "object",
+            "description": "Total expenditures on service",
+            "type": "object",
+            "properties": {
+                "value": {
+                    "description": "A quantity measured in current prices",
+                    "type": "number"
+                },
+                "unit": {
+                    "type": "The Intl.NumberFormat.currency() that corresponds with the quantity"
+                }
+            }
+        },
+        "externalities" : {
+            "type": "object",
+            "description": "Greenhouse gas emissions of service, accounted from source to end-use",
+                "properties": {
+                    "description": "Total greenhouse gas emissions of service",
+                    "value": {
+                        "description": "A quantity in math.unit('kgCO2e')",
+                        "type": "number"
+                    },
+                    "unit": {
+                        "description": "The math.unit() that corresponds with the quantity",
+                        "type": "string"
+                    }
+                }
+        },
+        "rating" : {
+            "type": "object",
+            "description": "A cardinal observation of service performance",
+                "properties": {
+                    "value": {
+                        "description": "(externalities.value * performance.value) / production.value",
+                        "type": "number"
+                    }
+                }
+        },
+        "principles": {
+            "description": "The Principles of a Society of Peoples that need to be followed with any performance observation",
+            "type": "array",
+                "properties": {
+                    "principle": {
+                        "description": "A Principle of a Society of Peoples",
+                        "type": "string"
+                    }
+                }
+        }
+    }
+}
