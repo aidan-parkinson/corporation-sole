@@ -15,5 +15,6 @@
         "I freely and independently assume all Properties of a Grand Master of the Commonwealth of Peoples",
         "I recognise that I now represent comprehensive philisophical doctrine"
     },
-    motto: "Humanity on Earth"
+    motto: "Humanity on Earth",
+    human: true
 }

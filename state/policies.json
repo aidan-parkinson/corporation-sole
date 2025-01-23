@@ -7,11 +7,11 @@
         Rule: "ANY Writers",
     Admins:
         Type: ImplicitMeta,
-        Rule: "ANY GMCOP",
+        Rule: "ALL GMCOP",
     LifecycleEndorsement:
         Type: ImplicitMeta,
-        Rule: "Any GMCOP",
+        Rule: "ALL GMCOP",
     Endorsement:
         Type: ImplicitMeta,
-        Rule: "OutOf(2, "MCOP", "GMCOP")"
+        Rule: "OutOf(2, "MCOP")"
 }

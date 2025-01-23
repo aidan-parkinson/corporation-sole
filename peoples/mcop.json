@@ -1,5 +1,6 @@
 {
     role: "Master",
     alias: "Peer",
-    abbreviation: "MCOP"
+    abbreviation: "MCOP",
+    human: true
 }
