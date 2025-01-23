@@ -1,0 +1,76 @@
+{
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://example.com/product.schema.json",
+        "title": "Service",
+        "description": "A contract for Commonwealth of Peoples ecosystem performance observations",
+        "type": "object",
+        "properties": {
+            "Guid": {
+                "description": "Globally Unique Identifier of agreed observation",
+                "type": "string"
+            },
+            "enforcement" : {
+                "description": "Total anthropogenic expenditures on enforcement",
+                "type": "object",
+                    "properties": {
+                        "value": {
+                            "description": "A quantity measured in current prices",
+                            "type": "number"
+                        },
+                        "unit": {
+                            "type": "The Intl.NumberFormat.currency() that corresponds with the quantity"
+                        }
+                    }
+            },
+            "activity" : {
+                "type": "object",
+                    "properties": {
+                        "description": "Total anthropogenic greenhouse gas emissions",
+                        "value": {
+                            "description": "A quantity in math.unit('kgCO2e')",
+                            "type": "number"
+                        },
+                        "unit": {
+                            "description": "The math.unit() that corresponds with the quantity",
+                            "type": "string"
+                        }
+                    }
+            },
+            "performance" : {
+                "type": "object",
+                    "properties": {
+                        "value": {
+                            "description": "ecosystem.enforcement.value / ecosystem.activity.value",
+                            "type": "number"
+                        },
+                        "unit": {
+                            "description": "concat(ecosystem.enforcement.unit, ecosystem.activity.unit)",
+                            "type": "string"
+                        }
+                    }
+            },
+            "time": {
+                "type": "object",
+                    "properties": {
+                        "from": {
+                            "description": "The corresponding setUTCDate() for the beginning of the observation time",
+                            "type": "number"
+                        },
+                        "to": {
+                            "description": "The corresponding setUTCDate() for the end of the observation time",
+                            "type": "number"
+                        }
+                    }
+            },
+            "principles": {
+                "description": "The Principles of a Society of Peoples that need to be followed with any performance observation",
+                "type": "array",
+                    "properties": {
+                        "principle": {
+                            "description": "A Principle of a Society of Peoples",
+                            "type": "string"
+                        }
+                    }
+            }
+   }
+}
