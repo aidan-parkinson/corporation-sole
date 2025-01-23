@@ -34,10 +34,50 @@ type Service struct {
         TimeFrom int `json:"time.from"`       
 }
 
+guid = crypto.randomUUID();
+
+performance.value = enforcement.value / activity.value;
+
+performance.unit = [enforcement.unit, activity.unit].join();
+
+activity.unit = math.unit('kgCO2e');
+
+externalities.unit = math.unit('kgCO2e');
+
+rating.value = (externalities.value * performance.value) / production.value;
+
+principles = [
+    "Peoples are free and independent",
+    "Peoples freedom and independence are to be respected by other Peoples",
+    "Peoples are to observe treaties and undertakings",
+    "Peoples are equal and are parties to the agreements that bind them",
+    "Peoples are to observe a duty of non-intervention",
+    "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
+    "Peoples are to honour human rights",
+    "Peoples are to observe certain specified restrictions in the conduct of war",
+    "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
+]
+
 // InitLedger adds a base set of services to the ledger
 func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) error {
   services := []Service{
-    //Add any examples
+    {
+      ActivityValue 55266778604355.50,
+      ActivityUnit math.unit('kgCO2e'),
+      EnforcementValue 7713934834354.89,
+      EnforcementUnit Intl.NumberFormat.currency(USD),
+      Guid crypto.randomUUID(),
+      PerformanceValue 0.13958,
+      PerformanceUnit "$kgCO2e",
+      ProductionValue int 1367798.11
+      ProductionUnit string Intl.NumberFormat.currency(GBP)
+      ExternalitiesValue int 444474.72
+      ExternalitiesUnit "kgCO2e"
+      RatingValue 0.0365,
+      Principles principles,
+      TimeTo setUTCDate(January 01, 2020),
+      TimeFrom setUTCDate(December 31, 2020)
+    }
   }
 
   for _, service := range services {
@@ -68,30 +108,6 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
     externalities.value int
     time.to int,
     time.from int)
-    
-    guid = crypto.randomUUID();
-
-    performance.value = enforcement.value / activity.value;
-
-    performance.unit = [enforcement.unit, activity.unit].join();
-
-    activity.unit = math.unit('kgCO2e');
-
-    externalities.unit = math.unit('kgCO2e');
-
-    rating.value = (externalities.value * performance.value) / production.value;
-
-    principles = [
-        "Peoples are free and independent",
-        "Peoples freedom and independence are to be respected by other Peoples",
-        "Peoples are to observe treaties and undertakings",
-        "Peoples are equal and are parties to the agreements that bind them",
-        "Peoples are to observe a duty of non-intervention",
-        "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
-        "Peoples are to honour human rights",
-        "Peoples are to observe certain specified restrictions in the conduct of war",
-        "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
-    ]
   
     service := Service{
         ActivityValue activity.value,
