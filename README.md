@@ -9,7 +9,7 @@ The Commonwealth of Peoples is developing a Sovereign enterprise grade inter-net
 
 `./calculations` : example calculations to inform initiation of ledger.
 
-`./definitions` : chaincode definitions to make Official Observations.
+`./definitions` : chaincode definitions to make Official observations.
 
 `./peoples` : role requirements.
 
