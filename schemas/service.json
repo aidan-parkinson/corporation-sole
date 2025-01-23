@@ -100,7 +100,7 @@
             "description": "A cardinal observation of service performance",
                 "properties": {
                     "value": {
-                        "description": "observation.service.activity.value*observation.commonwealth.performance.value) / observation.service.expenditure.value",
+                        "description": "(externalities.value * performance.value) / production.value",
                         "type": "number"
                     }
                 }
