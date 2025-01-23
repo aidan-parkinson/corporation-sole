@@ -100,9 +100,6 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
     activity.value int,
     enforcement.value int,
     enforcement.unit string,
-    guid string,
-    performance.value int,
-    performance.unit string,
     production.value int
     production.unit string
     externalities.value int
