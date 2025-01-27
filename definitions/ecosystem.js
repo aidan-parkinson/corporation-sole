@@ -29,11 +29,24 @@ type Ecosystem struct {
         TimeFrom int `json:"time.from"`       
 }
 
-guid = crypto.randomUUID();
+// Function to compute guid
+function guid() {
+  return crypto.randomUUID();
+}
 
-performance.value = enforcement.value / activity.value;
+// Function to compute performance valuation
+function performanceValue(enforcement.value, activity.value) {
+  enforcement.value / activity.value;
+}
 
-performance.unit = [enforcement.unit, activity.unit].join();
+// Function to compute performance unit
+function performanceUnit(enforcement.unit, activity.unit) {
+  [enforcement.unit, activity.unit].join();
+}
+
+performance.value = performanceValue;
+
+performance.unit = performanceUnit;
 
 activity.unit = math.unit('kgCO2e');
 

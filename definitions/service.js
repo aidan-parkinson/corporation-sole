@@ -34,17 +34,35 @@ type Service struct {
         TimeFrom int `json:"time.from"`       
 }
 
-guid = crypto.randomUUID();
+// Function to compute guid
+function guid() {
+  return crypto.randomUUID();
+}
 
-performance.value = enforcement.value / activity.value;
+// Function to compute performance valuation
+function performanceValue(enforcement.value, activity.value) {
+  enforcement.value / activity.value;
+}
 
-performance.unit = [enforcement.unit, activity.unit].join();
+// Function to compute performance unit
+function performanceUnit(enforcement.unit, activity.unit) {
+  [enforcement.unit, activity.unit].join();
+}
+
+performance.value = performanceValue;
+
+performance.unit = performanceUnit;
 
 activity.unit = math.unit('kgCO2e');
 
 externalities.unit = math.unit('kgCO2e');
 
-rating.value = (externalities.value * performance.value) / production.value;
+// Function to compute service rating
+function ratingValue(externalities.value, performance.value, production.value) {
+  (externalities.value * performance.value) / production.value;
+}
+
+rating.value = ratingValue;
 
 principles = [
     "Peoples are free and independent",
@@ -65,15 +83,15 @@ func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) 
       ActivityValue 55266778604355.50,
       ActivityUnit math.unit('kgCO2e'),
       EnforcementValue 7713934834354.89,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
+      EnforcementUnit Intl.NumberFormat.currency(GBP),
       Guid crypto.randomUUID(),
-      PerformanceValue 0.13958,
-      PerformanceUnit "$kgCO2e",
+      PerformanceValue 0.10873,
+      PerformanceUnit "£kgCO2e",
       ProductionValue 1367798.11
       ProductionUnit Intl.NumberFormat.currency(GBP)
-      ExternalitiesValue 444474.72
+      ExternalitiesValue 48327.61
       ExternalitiesUnit "kgCO2e"
-      RatingValue 0.0365,
+      RatingValue 0.0353,
       Principles principles,
       TimeTo setUTCDate(January 01, 2020),
       TimeFrom setUTCDate(December 31, 2020)
