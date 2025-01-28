@@ -5,6 +5,7 @@ import (
   "encoding/json"
   "log"
   "github.com/hyperledger/fabric-contract-api-go/contractapi"
+  "strings"
 )
 
 // SmartContract provides functions for managing observations of ecosystem performance
@@ -30,27 +31,34 @@ type Ecosystem struct {
 }
 
 // Function to compute guid
-function guid() {
+func GuId() {
   return crypto.randomUUID();
 }
 
 // Function to compute performance valuation
-function performanceValue(enforcement.value, activity.value) {
+func PerformanceValue(
+  enforcement.value,
+  activity.value) {
   enforcement.value / activity.value;
 }
 
 // Function to compute performance unit
-function performanceUnit(enforcement.unit, activity.unit) {
-  [enforcement.unit, activity.unit].join();
+func PerformanceUnit(
+  enforcement.unit, 
+  activity.unit) {
+  str := []string{enforcement.unit, activity.unit}
+  fmt.Println(strings.Join(str));
 }
 
-performance.value = performanceValue;
+var performance.value = PerformanceValue();
 
-performance.unit = performanceUnit;
+var performance.unit = PerformanceUnit();
 
-activity.unit = math.unit('kgCO2e');
+var activity.unit = math.unit('kgCO2e');
 
-principles = [
+var guid = GuId();
+
+var principles = [
     "Peoples are free and independent",
     "Peoples freedom and independence are to be respected by other Peoples",
     "Peoples are to observe treaties and undertakings",
@@ -341,6 +349,44 @@ func (s *SmartContract) CreateEcosystem(ctx contractapi.TransactionContextInterf
     enforcement.unit string,
     time.to int,
     time.from int)
+
+      // Function to compute guid
+      func GuId() {
+        guid = crypto.randomUUID();
+      }
+    
+      // Function to compute performance valuation
+      func PerformanceValue(
+        enforcement.value,
+        activity.value) {
+        performance.value = enforcement.value / activity.value;
+      }
+    
+      // Function to compute performance unit
+      func PerformanceUnit(
+        enforcement.unit, 
+        activity.unit) {
+        str := []string{enforcement.unit, activity.unit}
+        performance.unit = fmt.Println(strings.Join(str));
+      }
+    
+      GuId();
+      PerformanceValue();
+      PerformanceUnit();
+    
+      activity.unit = math.unit('kgCO2e');
+    
+      principles = []principle{
+        "Peoples are free and independent",
+        "Peoples freedom and independence are to be respected by other Peoples",
+        "Peoples are to observe treaties and undertakings",
+        "Peoples are equal and are parties to the agreements that bind them",
+        "Peoples are to observe a duty of non-intervention",
+        "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
+        "Peoples are to honour human rights",
+        "Peoples are to observe certain specified restrictions in the conduct of war",
+        "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
+        }
   
     ecosystem := Ecosystem{
         ActivityValue activity.value,
@@ -363,7 +409,7 @@ func (s *SmartContract) CreateEcosystem(ctx contractapi.TransactionContextInterf
   }
 
   // ReadEcosystem returns the ecosystem stored in the world state with given guid.
-func (s *SmartContract) ReadEcosystem(ctx contractapi.TransactionContextInterface, guid string) (*Ecosystem, error) {
+  func (s *SmartContract) ReadEcosystem(ctx contractapi.TransactionContextInterface, guid string) (*Ecosystem, error) {
     ecosystemJSON, err := ctx.GetStub().GetState(guid)
     if err != nil {
       return nil, fmt.Errorf("failed to read from world state: %v", err)
@@ -382,7 +428,7 @@ func (s *SmartContract) ReadEcosystem(ctx contractapi.TransactionContextInterfac
   }
 
   // Eocsystem exists returns true when ecosystem with given GUID exists in world state
-func (s *SmartContract) EcosystemExists(ctx contractapi.TransactionContextInterface, guid string) (bool, error) {
+  func (s *SmartContract) EcosystemExists(ctx contractapi.TransactionContextInterface, guid string) (bool, error) {
     ecosystemJSON, err := ctx.GetStub().GetState(guid)
     if err != nil {
       return false, fmt.Errorf("failed to read from world state: %v", err)
@@ -392,7 +438,7 @@ func (s *SmartContract) EcosystemExists(ctx contractapi.TransactionContextInterf
   }
 
   // GetAllEcosystems returns all ecosystems found in world state
-func (s *SmartContract) GetAllEcosystems(ctx contractapi.TransactionContextInterface) ([]*Ecosystem, error) {
+  func (s *SmartContract) GetAllEcosystems(ctx contractapi.TransactionContextInterface) ([]*Ecosystem, error) {
     // range query with empty string for startKey and endKey does an
     // open-ended query of all ecosystems in the chaincode namespace.
     resultsIterator, err := ctx.GetStub().GetStateByRange("", "")
