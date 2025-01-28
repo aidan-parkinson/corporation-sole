@@ -6,6 +6,8 @@ import (
   "log"
   "github.com/hyperledger/fabric-contract-api-go/contractapi"
   "strings"
+  "github.com/google/uuid"
+  "time"
 )
 
 // SmartContract provides functions for managing observations of ecosystem performance
@@ -30,300 +32,278 @@ type Ecosystem struct {
         TimeFrom int `json:"time.from"`       
 }
 
-// Function to compute guid
 func GuId() {
-  return crypto.randomUUID();
+  // Generate a new random UUID
+  guid := uuid.New()
+  fmt.Printf("Generated UUID: %s\n", u)
 }
 
-// Function to compute performance valuation
-func PerformanceValue(
-  enforcement.value,
-  activity.value) {
-  enforcement.value / activity.value;
+principles := []Principle{
+  "Peoples are free and independent",
+  "Peoples freedom and independence are to be respected by other Peoples",
+  "Peoples are to observe treaties and undertakings",
+  "Peoples are equal and are parties to the agreements that bind them",
+  "Peoples are to observe a duty of non-intervention",
+  "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
+  "Peoples are to honour human rights",
+  "Peoples are to observe certain specified restrictions in the conduct of war",
+  "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
 }
-
-// Function to compute performance unit
-func PerformanceUnit(
-  enforcement.unit, 
-  activity.unit) {
-  str := []string{enforcement.unit, activity.unit}
-  fmt.Println(strings.Join(str));
-}
-
-var performance.value = PerformanceValue();
-
-var performance.unit = PerformanceUnit();
-
-var activity.unit = math.unit('kgCO2e');
-
-var guid = GuId();
-
-var principles = [
-    "Peoples are free and independent",
-    "Peoples freedom and independence are to be respected by other Peoples",
-    "Peoples are to observe treaties and undertakings",
-    "Peoples are equal and are parties to the agreements that bind them",
-    "Peoples are to observe a duty of non-intervention",
-    "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
-    "Peoples are to honour human rights",
-    "Peoples are to observe certain specified restrictions in the conduct of war",
-    "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
-]
 
 // InitLedger adds a base set of ecosystems to the ledger
 func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) error {
   ecosystems := []Ecosystem{
     {
       ActivityValue 42526464403980.70,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 2796336506885.35,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.06576,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2000),
-      TimeFrom setUTCDate(December 31, 2000)
+      TimeTo time.Date(2000, 1, 01, timeString),
+      TimeFrom time.Date(2000, 12, 31, timeString)
     },
     {
       ActivityValue 41810195465417.20,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 2955718062487.85,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.07069,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2001),
-      TimeFrom setUTCDate(December 31, 2001)
+      TimeTo time.Date(2001, 1, 01, timeString),
+      TimeFrom time.Date(2001, 12, 31, timeString)
     },
     {
       ActivityValue 43163264049581.50,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 3251239119567.83,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.07532,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2002),
-      TimeFrom setUTCDate(December 31, 2002)
+      TimeTo time.Date(2002, 1, 01, timeString),
+      TimeFrom time.Date(2002, 12, 31, timeString)
     },
     {
       ActivityValue 46128239048293.40,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 3705486991396.25,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.08033,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2003),
-      TimeFrom setUTCDate(December 31, 2003)
+      TimeTo time.Date(2003, 1, 01, timeString),
+      TimeFrom time.Date(2003, 12, 31, timeString)
     },
     {
       ActivityValue 48752271780026.20,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 4184289916626.39,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.08583,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2004),
-      TimeFrom setUTCDate(December 31, 2004)
+      TimeTo time.Date(2004, 1, 01, timeString),
+      TimeFrom time.Date(2004, 12, 31, timeString)
     },
     {
       ActivityValue 48662428311438.10,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 4392199284751.95,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.09026,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2005),
-      TimeFrom setUTCDate(December 31, 2005)
+      TimeTo time.Date(2005, 1, 01, timeString),
+      TimeFrom time.Date(2005, 12, 31, timeString)
     },
     {
       ActivityValue 50346662429817.70,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 4713212363424.03,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.09362,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2006),
-      TimeFrom setUTCDate(December 31, 2006)
+      TimeTo time.Date(2006, 1, 01, timeString),
+      TimeFrom time.Date(2006, 12, 31, timeString)
     },
     {
       ActivityValue 49573652091628.70,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 5073569564982.13,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.10234,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2007),
-      TimeFrom setUTCDate(December 31, 2007)
+      TimeTo time.Date(2007, 1, 01, timeString),
+      TimeFrom time.Date(2007, 12, 31, timeString)
     },
     {
       ActivityValue 49203903569354.90,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 5861223736080.00,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.11912,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2008),
-      TimeFrom setUTCDate(December 31, 2008)
+      TimeTo time.Date(2008, 1, 01, timeString),
+      TimeFrom time.Date(2008, 12, 31, timeString)
     },
     {
       ActivityValue 48597710255510.80,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 5929058323070.43,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.12200,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2009),
-      TimeFrom setUTCDate(December 31, 2009)
+      TimeTo time.Date(2009, 1, 01, timeString),
+      TimeFrom time.Date(2009, 12, 31, timeString)
     },
     {
       ActivityValue 49668982222572.40,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 6228253670748.70,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.12540,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2010),
-      TimeFrom setUTCDate(December 31, 2010)
+      TimeTo time.Date(2010, 1, 01, timeString),
+      TimeFrom time.Date(2010, 12, 31, timeString)
     },
     {
       ActivityValue 52279637133072.60,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 6844870022802.30,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.13093,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2011),
-      TimeFrom setUTCDate(December 31, 2011)
+      TimeTo time.Date(2011, 1, 01, timeString),
+      TimeFrom time.Date(2011, 12, 31, timeString)
     },
     {
       ActivityValue 53401099401947.90,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 6814929419499.72,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.12762,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2012),
-      TimeFrom setUTCDate(December 31, 2012)
+      TimeTo time.Date(2012, 1, 01, timeString),
+      TimeFrom time.Date(2012, 12, 31, timeString)
     },
     {
       ActivityValue 53654461725180.10,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 6834780717883.52,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.12739,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2013),
-      TimeFrom setUTCDate(December 31, 2013)
+      TimeTo time.Date(2013, 1, 01, timeString),
+      TimeFrom time.Date(2013, 12, 31, timeString)
     },
     {
       ActivityValue 54158329731188.20,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 6875708851852.61,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.12696,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2014),
-      TimeFrom setUTCDate(December 31, 2014)
+      TimeTo time.Date(2014, 1, 01, timeString),
+      TimeFrom time.Date(2014, 12, 31, timeString)
     },
     {
       ActivityValue 54472369191803.50,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 6413590627779.08,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.11774,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2015),
-      TimeFrom setUTCDate(December 31, 2015)
+      TimeTo time.Date(2015, 1, 01, timeString),
+      TimeFrom time.Date(2015, 12, 31, timeString)
     },
     {
       ActivityValue 53259932210750.80,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 6452824525582.11,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.12116,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2016),
-      TimeFrom setUTCDate(December 31, 2016)
+      TimeTo time.Date(2016, 1, 01, timeString),
+      TimeFrom time.Date(2016, 12, 31, timeString)
     },
     {
       ActivityValue 54138630408721.60,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 6780934554209.21,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.12525,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2017),
-      TimeFrom setUTCDate(December 31, 2017)
+      TimeTo time.Date(2017, 1, 01, timeString),
+      TimeFrom time.Date(2017, 12, 31, timeString)
     },
     {
       ActivityValue 55914879048865.20,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 7338967125086.29,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.13125,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2018),
-      TimeFrom setUTCDate(December 31, 2018)
+      TimeTo time.Date(2018, 1, 01, timeString),
+      TimeFrom time.Date(2018, 12, 31, timeString)
     },
     {
       ActivityValue 56639566875488.90,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 7528974444291.53,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.13293,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2019),
-      TimeFrom setUTCDate(December 31, 2019)
+      TimeTo time.Date(2019, 1, 01, timeString),
+      TimeFrom time.Date(2019, 12, 31, timeString)
     },
     {
       ActivityValue 55266778604355.50,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 7713934834354.89,
-      EnforcementUnit Intl.NumberFormat.currency(USD),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "$",
+      Guid GuId(),
       PerformanceValue 0.13958,
       PerformanceUnit "$kgCO2e",
       Principles principles,
-      TimeTo setUTCDate(January 01, 2020),
-      TimeFrom setUTCDate(December 31, 2020)
+      TimeTo time.Date(2020, 1, 01, timeString),
+      TimeFrom time.Date(2020, 12, 31, timeString)
     } 
   }
 
@@ -349,44 +329,27 @@ func (s *SmartContract) CreateEcosystem(ctx contractapi.TransactionContextInterf
     enforcement.unit string,
     time.to int,
     time.from int)
-
-      // Function to compute guid
-      func GuId() {
-        guid = crypto.randomUUID();
-      }
     
-      // Function to compute performance valuation
-      func PerformanceValue(
-        enforcement.value,
-        activity.value) {
-        performance.value = enforcement.value / activity.value;
-      }
+    // Function to compute performance valuation
+    func PerformanceValue(
+      enforcement.value,
+      activity.value) {
+      performance.value = enforcement.value / activity.value;
+    }
     
-      // Function to compute performance unit
-      func PerformanceUnit(
-        enforcement.unit, 
-        activity.unit) {
-        str := []string{enforcement.unit, activity.unit}
-        performance.unit = fmt.Println(strings.Join(str));
-      }
+    // Function to compute performance unit
+    func PerformanceUnit(
+      enforcement.unit, 
+      activity.unit) {
+      str := []string{enforcement.unit, activity.unit}
+      performance.unit = fmt.Println(strings.Join(str));
+    }
     
-      GuId();
-      PerformanceValue();
-      PerformanceUnit();
+    GuId();
+    PerformanceValue();
+    PerformanceUnit();
     
-      activity.unit = math.unit('kgCO2e');
-    
-      principles = []principle{
-        "Peoples are free and independent",
-        "Peoples freedom and independence are to be respected by other Peoples",
-        "Peoples are to observe treaties and undertakings",
-        "Peoples are equal and are parties to the agreements that bind them",
-        "Peoples are to observe a duty of non-intervention",
-        "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
-        "Peoples are to honour human rights",
-        "Peoples are to observe certain specified restrictions in the conduct of war",
-        "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
-        }
+    activity.unit = "kgCO2e";
   
     ecosystem := Ecosystem{
         ActivityValue activity.value,

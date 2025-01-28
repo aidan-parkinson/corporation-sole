@@ -6,6 +6,8 @@ import (
   "log"
   "github.com/hyperledger/fabric-contract-api-go/contractapi"
   "strings"
+  "github.com/google/uuid"
+  "time"
 )
 
 // SmartContract provides functions for managing observations of service performance
@@ -35,25 +37,43 @@ type Service struct {
         TimeFrom int `json:"time.from"`       
 }
 
+func GuId() {
+  // Generate a new random UUID
+  guid := uuid.New()
+  fmt.Printf("Generated UUID: %s\n", u)
+}
+
+principles := []Principle{
+  "Peoples are free and independent",
+  "Peoples freedom and independence are to be respected by other Peoples",
+  "Peoples are to observe treaties and undertakings",
+  "Peoples are equal and are parties to the agreements that bind them",
+  "Peoples are to observe a duty of non-intervention",
+  "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
+  "Peoples are to honour human rights",
+  "Peoples are to observe certain specified restrictions in the conduct of war",
+  "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
+}
+
 // InitLedger adds a base set of services to the ledger
 func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) error {
   services := []Service{
     {
       ActivityValue 55266778604355.50,
-      ActivityUnit math.unit('kgCO2e'),
+      ActivityUnit "kgCO2e",
       EnforcementValue 7713934834354.89,
-      EnforcementUnit Intl.NumberFormat.currency(GBP),
-      Guid crypto.randomUUID(),
+      EnforcementUnit "£",
+      Guid GuId(),
       PerformanceValue 0.10873,
       PerformanceUnit "£kgCO2e",
       ProductionValue 1367798.11
-      ProductionUnit Intl.NumberFormat.currency(GBP)
+      ProductionUnit "£"
       ExternalitiesValue 48327.61
       ExternalitiesUnit "kgCO2e"
       RatingValue 0.0353,
       Principles principles,
-      TimeTo setUTCDate(January 01, 2020),
-      TimeFrom setUTCDate(December 31, 2020)
+      TimeTo time.Date(2020, 1, 01, timeString),
+      TimeFrom time.Date(2020, 12, 31, timeString)
     }
   }
 
@@ -83,11 +103,6 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
     time.to int,
     time.from int)
 
-    // Function to compute guid
-    func GuId() {
-      guid = crypto.randomUUID();
-    }
-
     // Function to compute performance valuation
     func PerformanceValue(
       enforcement.value,
@@ -107,7 +122,6 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
     func RatingValue(externalities.value,
       performance.value,
       production.value) {
-      var numerators int
       numerators = externalities.value * performance.value;
       rating.value = numerators / production.value;
     }
@@ -117,7 +131,7 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
     PerformanceUnit();
     RatingValue();
 
-    activity.unit = math.unit('kgCO2e');
+    activity.unit = "kgCO2e";
 
     principles = []principle{
       "Peoples are free and independent",
