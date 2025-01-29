@@ -328,13 +328,6 @@ func (s *SmartContract) CreateEcosystem(ctx contractapi.TransactionContextInterf
     externalitiesUnit string,
     timeTo time.Time,
     timeFrom time.Time)  error {
-      exists, err := s.EcosystemExists(ctx, guid)
-      if err != nil {
-        return err
-      }
-      if exists {
-        return fmt.Errorf("the ecosystem%s already exists", guid)
-      }
 
     id := uuid.New().String()
     
