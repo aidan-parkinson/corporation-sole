@@ -1,6 +1,6 @@
 module github.com/hyperledger/fabric-samples/corporation-sole/definitions/service-go
 
-go 1.18
+go 1.12
 
 require (
         github.com/golang/protobuf v1.3.2
