@@ -322,11 +322,10 @@ func (s *SmartContract) CreateEcosystem(ctx contractapi.TransactionContextInterf
     activityValue float64,
     enforcementValue float64,
     enforcementUnit string,
-    guid string,
-    activityUnit string,
-    performanceValue float64,
-    performanceUnit string,
-    principles []string,
+    productionValue float64,
+    productionUnit string,
+    externalitiesValue float64,
+    externalitiesUnit string,
     timeTo time.Time,
     timeFrom time.Time)  error {
       exists, err := s.EcosystemExists(ctx, guid)
@@ -339,15 +338,15 @@ func (s *SmartContract) CreateEcosystem(ctx contractapi.TransactionContextInterf
 
     id := uuid.New().String()
     
-    guid = strings.Replace(id, "-", "", -1)
+    guid := strings.Replace(id, "-", "", -1)
     
-    activityUnit = "kgCO2e"
+    activityUnit := "kgCO2e"
 
-    performanceValue = enforcementValue / activityValue
+    performanceValue := enforcementValue / activityValue
 
-    performanceUnit = enforcementUnit + activityUnit
+    performanceUnit := enforcementUnit + activityUnit
 
-    principles = []string {
+    principles := []string {
     "Peoples are free and independent",
     "Peoples freedom and independence are to be respected by other Peoples",
     "Peoples are to observe treaties and undertakings",

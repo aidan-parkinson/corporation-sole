@@ -89,18 +89,12 @@ func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) 
 // CreateService issues a new service to the world state with given details.
 func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterface, 
     activityValue float64,
-    activityUnit string,
     enforcementValue float64,
     enforcementUnit string,
-    guid string,
-    performanceValue float64,
-    performmanceUnit string,
     productionValue float64,
     productionUnit string,
     externalitiesValue float64,
     externalitiesUnit string,
-    ratingValue float64,
-    principles []string,
     timeTo time.Time,
     timeFrom time.Time) error {
       exists, err := s.ServiceExists(ctx, guid)
@@ -113,21 +107,21 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
 
     id := uuid.New().String()
     
-    guid = strings.Replace(id, "-", "", -1)
+    guid := strings.Replace(id, "-", "", -1)
     
-    activityUnit = "kgCO2e"
+    activityUnit := "kgCO2e"
 
-    performanceValue = enforcementValue / activityValue
+    performanceValue := enforcementValue / activityValue
 
-    performanceUnit = enforcementUnit + activityUnit
+    performanceUnit := enforcementUnit + activityUnit
 
     ratingNumerators := externalitiesValue * performanceValue
 
-    ratingValue = numerators / productionValue
+    ratingValue := numerators / productionValue
 
-    activityUnit = "kgCO2e"
+    activityUnit := "kgCO2e"
 
-    principles = []string {
+    principles := []string {
       "Peoples are free and independent",
       "Peoples freedom and independence are to be respected by other Peoples",
       "Peoples are to observe treaties and undertakings",
