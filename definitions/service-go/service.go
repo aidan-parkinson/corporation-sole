@@ -33,7 +33,7 @@ type Service struct {
         ExternalitiesUnit string `json:"externalities.unit"`
         RatingValue int `json:"rating.value"`
         Principles array `json:"principles"`
-        TimeTo int `json:"time.to"`,
+        TimeTo int `json:"time.to"`
         TimeFrom int `json:"time.from"`       
 }
 
@@ -43,7 +43,7 @@ func GuId() {
   fmt.Printf("Generated UUID: %s\n", u)
 }
 
-principles := []Principle{
+principles = []Principle{
   "Peoples are free and independent",
   "Peoples freedom and independence are to be respected by other Peoples",
   "Peoples are to observe treaties and undertakings",
@@ -59,21 +59,21 @@ principles := []Principle{
 func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) error {
   services := []Service{
     {
-      ActivityValue 55266778604355.50,
-      ActivityUnit "kgCO2e",
-      EnforcementValue 7713934834354.89,
-      EnforcementUnit "£",
-      Guid GuId(),
-      PerformanceValue 0.10873,
-      PerformanceUnit "£kgCO2e",
-      ProductionValue 1367798.11
-      ProductionUnit "£"
-      ExternalitiesValue 48327.61
-      ExternalitiesUnit "kgCO2e"
-      RatingValue 0.0353,
-      Principles principles,
-      TimeTo time.Date(2020, 1, 01, timeString),
-      TimeFrom time.Date(2020, 12, 31, timeString)
+      ActivityValue: 55266778604355.50,
+      ActivityUnit: "kgCO2e",
+      EnforcementValue: 7713934834354.89,
+      EnforcementUnit: "£",
+      Guid: GuId(),
+      PerformanceValue: 0.10873,
+      PerformanceUnit: "£kgCO2e",
+      ProductionValue: 1367798.11
+      ProductionUnit: "£"
+      ExternalitiesValue: 48327.61
+      ExternalitiesUnit: "kgCO2e"
+      RatingValue: 0.0353,
+      Principles: principles,
+      TimeTo: time.Date(2020, 1, 01, timeString),
+      TimeFrom: time.Date(2020, 12, 31, timeString)
     }
   }
 
@@ -103,64 +103,62 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
     time.to int,
     time.from int)
 
+    var performance.value int
+
+    var performance.unit string
+
+    var rating.numerators int
+
+    var rating.value int
+    
+    var activity.unit string
+
     // Function to compute performance valuation
     func PerformanceValue(
-      enforcement.value,
-      activity.value) {
-      performance.value = enforcement.value / activity.value;
+      enforcement.value int,
+      activity.value int) {
+      performance.value = enforcement.value / activity.value
     }
 
     // Function to compute performance unit
     func PerformanceUnit(
-      enforcement.unit, 
-      activity.unit) {
+      enforcement.unit string, 
+      activity.unit string) {
       str := []string{enforcement.unit, activity.unit}
-      performance.unit = fmt.Println(strings.Join(str));
+      performance.unit = fmt.Println(strings.Join(str))
     }
 
     // Function to compute service rating
     func RatingValue(externalities.value,
-      performance.value,
-      production.value) {
-      numerators = externalities.value * performance.value;
-      rating.value = numerators / production.value;
+      performance.value int,
+      production.value int) {
+      rating.numerators = externalities.value * performance.value
+      rating.value = numerators / production.value
     }
 
-    GuId();
-    PerformanceValue();
-    PerformanceUnit();
-    RatingValue();
+    GuId()
+    PerformanceValue()
+    PerformanceUnit()
+    RatingValue()
 
-    activity.unit = "kgCO2e";
-
-    principles = []principle{
-      "Peoples are free and independent",
-      "Peoples freedom and independence are to be respected by other Peoples",
-      "Peoples are to observe treaties and undertakings",
-      "Peoples are equal and are parties to the agreements that bind them",
-      "Peoples are to observe a duty of non-intervention",
-      "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
-      "Peoples are to honour human rights",
-      "Peoples are to observe certain specified restrictions in the conduct of war",
-      "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
-    }
+    activity.unit = "kgCO2e"
     
     service := Service{
-        ActivityValue activity.value,
-        ActivityUnit activity.unit,
-        EnforcementValue enforcement.value,
-        EnforcementUnit enforcement.unit,
-        Guid guid,
-        PerformanceValue performance.value,
-        PerformanceUnit performance.unit,
-        ProductionValue production.value,
-        ProductionUnit production.unit,
-        ExternalitiesValue externalities.value,
-        ExternalitiesUnit externalities.unit,
-        RatingValue rating.value,
-        Principles principles,
-        TimeTo time.to,
-        TimeFrom time.from
+        ActivityValue: activity.value,
+        ActivityUnit: activity.unit,
+        EnforcementValue: enforcement.value,
+        EnforcementUnit: enforcement.unit,
+        Guid: guid,
+        PerformanceValue: performance.value,
+        PerformanceUnit: performance.unit,
+        ProductionValue: production.value,
+        ProductionUnit: production.unit,
+        ExternalitiesValue: externalities.value,
+        ExternalitiesUnit: externalities.unit,
+        RatingValue: rating.value,
+        Principles: principles,
+        TimeTo: time.to,
+        TimeFrom: time.from
     }
     ecosystemJSON, err := json.Marshal(service)
     if err != nil {
