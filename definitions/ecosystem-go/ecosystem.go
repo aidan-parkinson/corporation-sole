@@ -7,6 +7,7 @@ import (
   "strings"
   "github.com/google/uuid"
   "time"
+  "log"
 )
 
 // SmartContract provides functions for managing observations of ecosystem performance
