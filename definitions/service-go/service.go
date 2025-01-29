@@ -102,7 +102,14 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
     ratingValue float64,
     principles []string,
     timeTo time.Time,
-    timeFrom time.Time) {
+    timeFrom time.Time) error {
+      exists, err := s.ServiceExists(ctx, guid)
+      if err != nil {
+        return err
+      }
+      if exists {
+        return fmt.Errorf("the service%s already exists", guid)
+      }
 
     id := uuid.New().String()
     
