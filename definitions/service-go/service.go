@@ -49,7 +49,7 @@ func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) 
     "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
     "Peoples are to honour human rights",
     "Peoples are to observe certain specified restrictions in the conduct of war",
-    "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
+    "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime",
   }
   
   services := []Service{
@@ -61,7 +61,7 @@ func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) 
       Guid: "e379bca5fe034e94bc843814d4e32280",
       PerformanceValue: 0.10873,
       PerformanceUnit: "£kgCO2e",
-      ProductionValue: 1367798.11
+      ProductionValue: 1367798.11,
       ProductionUnit: "£"
       ExternalitiesValue: 48327.61
       ExternalitiesUnit: "kgCO2e"
@@ -124,7 +124,7 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
       "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
       "Peoples are to honour human rights",
       "Peoples are to observe certain specified restrictions in the conduct of war",
-      "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
+      "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime",
     }
 
     service := Service{
