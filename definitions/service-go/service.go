@@ -207,3 +207,15 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
   
     return services, nil
   }
+
+
+func main() {
+  serviceChaincode, err := contractapi.NewChaincode(&SmartContract{})
+  if err != nil {
+    log.Panicf("Error creating service chaincode: %v", err)
+  }
+
+  if err := serviceChaincode.Start(); err != nil {
+    log.Panicf("Error starting service chaincode: %v", err)
+  }
+}

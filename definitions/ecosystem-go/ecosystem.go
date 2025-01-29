@@ -427,3 +427,14 @@ func (s *SmartContract) CreateEcosystem(ctx contractapi.TransactionContextInterf
   
     return ecosystems, nil
   }
+
+  func main() {
+  ecosystemChaincode, err := contractapi.NewChaincode(&SmartContract{})
+  if err != nil {
+    log.Panicf("Error creating ecosystem chaincode: %v", err)
+  }
+
+  if err := serviceChaincode.Start(); err != nil {
+    log.Panicf("Error starting ecosystem chaincode: %v", err)
+  }
+}
