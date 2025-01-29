@@ -3,7 +3,6 @@ package main
 import (
   "fmt"
   "encoding/json"
-  "log"
   "github.com/hyperledger/fabric-contract-api-go/contractapi"
   "strings"
   "github.com/google/uuid"
@@ -20,50 +19,45 @@ type SmartContract struct {
 // golang keeps the order when marshal to json but doesn't order automatically
 
 type Service struct {       
-        ActivityValue int `json:"activity.value"`
-        ActivityUnit string `json:"activity.unit"`
-        EnforcementValue int `json:"enforcement.value"`
-        EnforcementUnit string `json:"enforcement.unit"`
+        ActivityValue float64 `json:"activityValue"`
+        ActivityUnit string `json:"activityUnit"`
+        EnforcementValue float64 `json:"enforcementValue"`
+        EnforcementUnit string `json:"enforcementUnit"`
         Guid string `json:"guid"`
-        PerformanceValue int `json:"performance.value"`
-        PerformanceUnit string `json:"performance.unit"`
-        ProductionValue int `json:"production.value"`
-        ProductionUnit string `json:"production.unit"`
-        ExternalitiesValue int `json:"externalities.value"`
-        ExternalitiesUnit string `json:"externalities.unit"`
-        RatingValue int `json:"rating.value"`
-        Principles array `json:"principles"`
-        TimeTo int `json:"time.to"`
-        TimeFrom int `json:"time.from"`       
-}
-
-func GuId() {
-  // Generate a new random UUID
-  guid := uuid.New()
-  fmt.Printf("Generated UUID: %s\n", u)
-}
-
-principles = []Principle{
-  "Peoples are free and independent",
-  "Peoples freedom and independence are to be respected by other Peoples",
-  "Peoples are to observe treaties and undertakings",
-  "Peoples are equal and are parties to the agreements that bind them",
-  "Peoples are to observe a duty of non-intervention",
-  "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
-  "Peoples are to honour human rights",
-  "Peoples are to observe certain specified restrictions in the conduct of war",
-  "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
+        PerformanceValue float64 `json:"performanceValue"`
+        PerformanceUnit string `json:"performanceUnit"`
+        ProductionValue float64 `json:"productionValue"`
+        ProductionUnit string `json:"productionUnit"`
+        ExternalitiesValue float64 `json:"externalitiesValue"`
+        ExternalitiesUnit string `json:"externalitiesUnit"`
+        RatingValue float64 `json:"ratingValue"`
+        Principles []string `json:"principles"`
+        TimeTo time.Time `json:"timeTo"`
+        TimeFrom time.Time `json:"timeFrom"`       
 }
 
 // InitLedger adds a base set of services to the ledger
 func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) error {
+
+  principles := []string {
+    "Peoples are free and independent",
+    "Peoples freedom and independence are to be respected by other Peoples",
+    "Peoples are to observe treaties and undertakings",
+    "Peoples are equal and are parties to the agreements that bind them",
+    "Peoples are to observe a duty of non-intervention",
+    "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
+    "Peoples are to honour human rights",
+    "Peoples are to observe certain specified restrictions in the conduct of war",
+    "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
+  }
+  
   services := []Service{
     {
       ActivityValue: 55266778604355.50,
       ActivityUnit: "kgCO2e",
       EnforcementValue: 7713934834354.89,
       EnforcementUnit: "£",
-      Guid: GuId(),
+      Guid: "e379bca5fe034e94bc843814d4e32280",
       PerformanceValue: 0.10873,
       PerformanceUnit: "£kgCO2e",
       ProductionValue: 1367798.11
@@ -72,9 +66,9 @@ func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) 
       ExternalitiesUnit: "kgCO2e"
       RatingValue: 0.0353,
       Principles: principles,
-      TimeTo: time.Date(2020, 1, 01, timeString),
-      TimeFrom: time.Date(2020, 12, 31, timeString)
-    }
+      TimeTo: time.Date(2020, time.January, 01, 0, 0, 0, 0, time.UTC),
+      TimeFrom: time.Date(2020, time.December, 31, 24, 0, 0, 0, time.UTC),
+    },
   }
 
   for _, service := range services {
@@ -90,75 +84,70 @@ func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) 
   }
 
   return nil
-}
+}  
 
 // CreateService issues a new service to the world state with given details.
 func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterface, 
-    activity.value int,
-    enforcement.value int,
-    enforcement.unit string,
-    production.value int
-    production.unit string
-    externalities.value int
-    time.to int,
-    time.from int)
+    activityValue float64,
+    activityUnit string,
+    enforcementValue float64,
+    enforcementUnit string,
+    guid string,
+    performanceValue float64,
+    performmanceUnit string,
+    productionValue float64,
+    productionUnit string,
+    externalitiesValue float64,
+    externalitiesUnit string,
+    ratingValue float64,
+    principles []string,
+    timeTo time.Time,
+    timeFrom time.Time) {
 
-    var performance.value int
-
-    var performance.unit string
-
-    var rating.numerators int
-
-    var rating.value int
+    id := uuid.New().String()
     
-    var activity.unit string
-
-    // Function to compute performance valuation
-    func PerformanceValue(
-      enforcement.value int,
-      activity.value int) {
-      performance.value = enforcement.value / activity.value
-    }
-
-    // Function to compute performance unit
-    func PerformanceUnit(
-      enforcement.unit string, 
-      activity.unit string) {
-      str := []string{enforcement.unit, activity.unit}
-      performance.unit = fmt.Println(strings.Join(str))
-    }
-
-    // Function to compute service rating
-    func RatingValue(externalities.value,
-      performance.value int,
-      production.value int) {
-      rating.numerators = externalities.value * performance.value
-      rating.value = numerators / production.value
-    }
-
-    GuId()
-    PerformanceValue()
-    PerformanceUnit()
-    RatingValue()
-
-    activity.unit = "kgCO2e"
+    guid = strings.Replace(id, "-", "", -1)
     
+    activityUnit = "kgCO2e"
+
+    performanceValue = enforcementValue / activityValue
+
+    performanceUnit = enforcementUnit + activityUnit
+
+    ratingNumerators := externalitiesValue * performanceValue
+
+    ratingValue = numerators / productionValue
+
+    activityUnit = "kgCO2e"
+
+    principles = []string {
+      "Peoples are free and independent",
+      "Peoples freedom and independence are to be respected by other Peoples",
+      "Peoples are to observe treaties and undertakings",
+      "Peoples are equal and are parties to the agreements that bind them",
+      "Peoples are to observe a duty of non-intervention",
+      "Peoples have the right of self-defense but no right to instigate war for reasons other than self-defense",
+      "Peoples are to honour human rights",
+      "Peoples are to observe certain specified restrictions in the conduct of war",
+      "Peoples have a duty to assist other Peoples living under unfavourable conditions that prevent their having a just or decent political and social regime"
+    }
+
     service := Service{
-        ActivityValue: activity.value,
-        ActivityUnit: activity.unit,
-        EnforcementValue: enforcement.value,
-        EnforcementUnit: enforcement.unit,
+        ActivityValue: activityValue,
+        ActivityUnit: activityUnit,
+        EnforcementValue: enforcementValue,
+        EnforcementUnit: enforcementUnit,
         Guid: guid,
-        PerformanceValue: performance.value,
-        PerformanceUnit: performance.unit,
-        ProductionValue: production.value,
-        ProductionUnit: production.unit,
-        ExternalitiesValue: externalities.value,
-        ExternalitiesUnit: externalities.unit,
-        RatingValue: rating.value,
+        PerformanceValue: performanceValue,
+        PerformanceUnit: performanceUnit,
+        ProductionValue: productionValue,
+        ProductionUnit: productionUnit,
+        ExternalitiesValue: externalitiesValue,
+        ExternalitiesUnit: externalitiesUnit,
+        RatingValue: ratingValue,
         Principles: principles,
-        TimeTo: time.to,
-        TimeFrom: time.from
+        TimeTo: timeTo,
+        TimeFrom: timeFrom,
     }
     ecosystemJSON, err := json.Marshal(service)
     if err != nil {
