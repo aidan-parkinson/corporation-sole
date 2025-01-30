@@ -111,9 +111,7 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
 
     ratingNumerators := externalitiesValue * performanceValue
 
-    ratingValue := numerators / productionValue
-
-    activityUnit := "kgCO2e"
+    ratingValue := ratingNumerators / productionValue
 
     principles := []string {
       "Peoples are free and independent",
@@ -144,7 +142,7 @@ func (s *SmartContract) CreateService(ctx contractapi.TransactionContextInterfac
         TimeTo: timeTo,
         TimeFrom: timeFrom,
     }
-    ecosystemJSON, err := json.Marshal(service)
+    serviceJSON, err := json.Marshal(service)
     if err != nil {
       return err
     }
