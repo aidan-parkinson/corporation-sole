@@ -62,7 +62,7 @@ func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) 
       PerformanceValue: 0.10873,
       PerformanceUnit: "£kgCO2e",
       ProductionValue: 1367798.11,
-      ProductionUnit: "£"
+      ProductionUnit: "£",
       ExternalitiesValue: 48327.61
       ExternalitiesUnit: "kgCO2e"
       RatingValue: 0.0353,
