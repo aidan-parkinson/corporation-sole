@@ -17,6 +17,6 @@
     },
     "Endorsement": {
         "Type": "ImplicitMeta",
-        "Rule": "OutOf(2, MCOP)"
+        "Rule": "ALL MCOP"
     }   
 }
