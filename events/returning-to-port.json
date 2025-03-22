@@ -1,0 +1,12 @@
+{
+    "venue": "Gordons Wine Bar, Embankment",
+    "drink": "1984 Vintage Port",
+    "food": "A buffet of delicacies",
+    "dress": "Bristol Fashion",
+    "required" : {
+        "Duchess Isabel",
+        "Prince Alex",
+        "Prince Richard"
+    },
+    "optional" : "Prince Luke"
+}
