@@ -3,10 +3,12 @@
     "drink": "1984 Vintage Port",
     "food": "A buffet of delicacies",
     "dress": "Bristol Fashion",
-    "required" : {
+    "required" : [
         "Duchess Isabel",
         "Prince Alex",
         "Prince Richard"
-    },
-    "optional" : "Prince Luke"
+    ],
+    "optional" : [
+        "Prince Luke"
+    ]
 }
