@@ -1,0 +1,18 @@
+{
+    "origin" : "House of Cothique",
+    "executive-chairman" : "Prince Aidan",
+    "editor-of-dawn" : "Prince Joseph",
+    "editor-of-dusk" : "Crown Princess Jennifer",
+    "editor-of-social" : "Prince Richard",
+    "creative-director" : "Prince Luke",
+    "authors" : {
+        "Aidan T. Parkinson"
+    },
+    "titles" : {
+        "Dawn Papers" : "A quarterly gritty business briefing of curent affairs",
+        "Dusk Papers" : "A quarterly fashion and lifestyle magazine",
+        "Ecosystem Alarm Management: A Manifesto in Systems Architecture" : "Outstanding non-fiction of world leading content",
+        "Cene"  : "Hardback young-adult fiction",
+        "Fringe Social" : "Mastadon Server"
+    }
+}

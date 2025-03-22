@@ -1,7 +1,9 @@
 {
-    "Specialism" : "Capital",
-    "Herald" : "Frostheart Pheonix",
-    "Arms" : "Arsenal",
-    "GMCOP" : "Governor Christopher of Lothern",
-    "COP" : "Hoshi Property"
+    "specialism" : "Capital",
+    "herald" : "Frostheart Pheonix",
+    "arms" : "Arsenal",
+    "gmcop" : "Governor Christopher of Lothern",
+    "cop" : "Hoshi Property"
+    "cop" : "King Michael"
+    "cop" : "Queen Sandra"
 }

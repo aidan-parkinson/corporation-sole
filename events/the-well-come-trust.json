@@ -1,0 +1,63 @@
+{
+    "Title" : "The Well Come Trust",
+    "Goal" : "Excellence in psychological safety and maternity care",
+    "Start" : "1st May 2026",
+    "Trails" : {
+        "Cape Wrath Trail" : "House Caledor",
+        "Affric Kintral Trail" : "House Cothique",
+        "Cowal Peninsular" : "House Averlorn and House Chrace",
+        "West Highland Way" : "House Nagarythe"
+    },
+    "Quartermasters" : {
+        "King Henry" : "Cape Wrath Trail and Affric Kintral Trail from Fort William",
+        "Queen Jane" : "Cowal Perninsular and West Hihgland Way from Glasgow"
+    },
+    "Creative Director" : "Prince Luke",
+    "Magister Juris" : "Princess Grace",
+    "Rapid Prototyping" : "Mettle Studio",
+    "Award" : "Fellowship of the Mission Impossible Team (FMIT post-nominals)",
+    "Narrative": "The care of newborn babies, whether human or a pet, is a critical period that puts acute stresses on families.
+    Having struggled severely with my mental health during these times, I have witnessed the state of acute care for those who become dangerously unwell.
+    My personal experiences were typically disorientating and traumatic.
+    Such matters have been made worse by the clear lack of investment in NHS acute wards.",
+    "Example intervetions": {
+       "Bedroom display screens": {
+            "where the patient is",
+            what to do in a fire,
+            what section the patient has been placed under and what that means for their rights,
+            the weeks agenda and routine,
+            optional activities,
+            expected standards of behaviour
+        },
+        Nurses observations by digital form, on mobile phone or tablet published to a database,
+        Retorative therapies for those experiencing post-natal depression,
+        Gut healthy eating options,
+        The ability to call a midwife for assurance at any time of pregnancy.
+    }
+    "Pheonix Guard" : {
+        AtkinsRéalis(?);
+        IBM(?);
+        Global Switch(?);
+        Invictus Games(?);
+        Duchy of Westminster(?);
+        Duchy of Cornwall(?);
+        Gillett Instruments;
+        Fringe Papers;
+        Hoshi Property,
+        Mettle Studio,
+        Colours of Averlorn,
+        Games Workshop(?),
+        CBRE(?),
+        NHS(?)
+    },
+    "Chair of the Trustees" : "Prince Dominic",
+    "Trustees" : {
+        "Duchy of Cothique"
+        "Duchy of Yvresse",
+        "Duchy of Chrace",
+        "Duchy of Averlorn",
+        "Duchy of Sussex",
+        "Duchy of Cornwall",
+        "Duchy of Westminster"
+    }
+}

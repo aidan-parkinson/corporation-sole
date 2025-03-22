@@ -1,0 +1,17 @@
+{
+    "origin" : "House of Eataine",
+    "executive-chairman" : "Prince Aidan",
+    "chief-executive-officer" : "Prince Richard",
+    "chief-product-officer": "Everqueen",
+    "creative-director" : "Prince Luke",
+    "master-luthier" : "King Michael",
+    "instruments" : {
+        "Gillett Contour S Bass" : {
+            "wood" : {"Cherry"},
+            "strings" : {"4", "5"},
+            "fretless" : {"boolean"},
+            "strings" : {"nylon", "steel"},
+            "review of quaity" : "./simline-review-gillett.pdf"
+        }
+    }
+}

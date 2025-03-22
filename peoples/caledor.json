@@ -1,9 +1,9 @@
 {
-    "Specialism" : "Industry",
+    "specialism" : "Industry",
     "Herald" : "Dragon",
-    "Arms" : "Spear",
-    "GMCOP" : "The High Priest of Tor Caled, Prince Samuel",
-    "GMCOP" : "Duchess Anna of Tor Caled",
-    "MCOP" : "Captain of the Dragon Princes, Prince Alex",
-    "COP" : "Mettle Studio"
+    "arms" : "Spear",
+    "gmcop" : "The High Priest of Tor Caled, Prince Samuel",
+    "gmcop" : "Duchess Anna of Tor Caled",
+    "mcop" : "Captain of the Dragon Princes, Prince Alexander",
+    "cop" : "Mettle Studio"
 }

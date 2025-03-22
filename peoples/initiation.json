@@ -1,13 +1,7 @@
 {
-    "role": "Initiation",
-    "process": "Baptism",
-    "publisher": {
-        "Fringe Papers": {
-            "class": "Trademark of Great Britain and Northern Ireland",
-            "authority": "Intellectual Property Office",
-            "value": "UK00003925191" 
-        }
-    },
+    "role" : "Initiation",
+    "process" : "Baptism",
+    "order" : "Order of the Lotan",
     "sovereign": "God",
     "covenant": [
         "I hereby submit to the Earth's ecosystem and God's will over all it's inhabitants",
@@ -15,5 +9,11 @@
         "I recognise that I now represent comprehensive philisophical doctrine"
     ],
     "motto": "Humanity on Earth",
-    "human": true
+    "individual" : "Dr Aidan Thomas Parkinson BEng(Hons) MSc PhD CEng MCIBSE",
+    "publisher" : {
+        "title": "Fringe Papers",
+        "class": "Trademark of Great Britain and Northern Ireland",
+        "authority": "Intellectual Property Office",
+        "value": "UK00003925191" 
+    }
 }

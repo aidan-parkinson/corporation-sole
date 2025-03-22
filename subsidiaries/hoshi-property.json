@@ -1,0 +1,12 @@
+{
+    "origin" : "House of Chrace",
+    "executive-chairman" : "Prince Aidan",
+    "executive-director" : "The Everqueen",
+    "magister-juris" : "Prince Robert"
+    "narrative" : "Hoshi leverages upon the new capabilities of the Commonwealth of Peoples.
+    Hoshi visualises real estate service performance as a colour coded service rating, with internally consistent comparisons across a global domain.
+    Larger red icons indicate expensive services that are relatively poor performing.
+    Green icons indicate leading service performance.
+    A Hoshi user can quickly establish which services require focussed capital investment in performance improvement and, once implemented, can validate the result.",
+    "prototype" : "https://aidanparkinson.grafana.net/dashboard/snapshot/BShOdxZHXSZXS71gRXl2pF95pdLBDKlv?orgId=0&from=2023-01-01T00:00:00.000Z&to=2023-12-31T23:59:59.000Z&timezone=browser"
+}

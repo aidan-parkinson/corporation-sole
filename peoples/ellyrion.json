@@ -1,7 +1,7 @@
 {
-    "Specialism" : "Cavalry",
-    "Herald" : "A White Horse",
-    "Arms" : "Spurs",
-    "GMCOP" : "Artistic Director, Prince Luke the Arch Duke of Tor Elyr",
-    "COP" : "Video Camera"
+    "specialism" : "Cavalry",
+    "herald" : "A White Horse",
+    "arms" : "Spurs",
+    "gmcop" : "Creative Director, Prince Luke the Arch Duke of Tor Elyr",
+    "cop" : "Video Camera"
 }
