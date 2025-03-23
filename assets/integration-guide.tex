@@ -18,8 +18,8 @@
 \usepackage{caption}
 
 
-\title{His Grace, Prince Aidan the Arch Duke of Anirain GMCOP}
-\author{5 Colina Mews, London N15 3HS}
+\title{Remote Energy Monitoring}
+\author{BEng(Hons) MSc PhD(Cantab) GMCOP CEng MCIBSE}
 
 \date{\today}							% Activate to display a given date or no date
 
@@ -29,11 +29,161 @@
 \href{mailto:aidan.parkinson@gmail.com}{aidan.parkinson@gmail.com}
 \end{center}
 
+Many organisations intend to upgrade to a remote energy monitoring system, to understand energy use and improve service performance across their globally distributed estates.
+Having a better understanding of energy use should allow strategies and programmes to be developed holistically at a local level.
+The following requirements provide guidance on how to inter-network with such an application.
 
+\section{Utility Metering}
 
-Yours truly,\\
+The tables below compare the various types of utility meters available.
 
-Aidan T. Parkinson
-BEng(Hons) MSc PhD(Cantab) CEng MCIBSE
+\begin{table}[H]
+	\caption{Internet-of-Things (IoT) meter}
+	\begin{center}
+	\begin{tabular}{| l | l |}
+	\hline
+	Advantages&Disadvantages\\
+	\hline
+	No requirement for inter-networking gateway&Expensive
+	Meter counts energy consumption&Device testing requirement to validate performance
+	Potentially more descriptive information payload.	
+	\hline
+	\end{tabular}
+	\end{center}
+	\label{IoT Meter Option}
+\end{table}
+
+\begin{table}[H]
+	\caption{Open building systems communications protocol meter}
+	\begin{center}
+	\begin{tabular}{| l | l |}
+	\hline
+	Advantages&Disadvantages\\
+	\hline
+	Meter counts energy consumption&Insufficient security features for exposure to the Wide Area Network (WAN).
+	Potentially more descriptive information payload.	
+	\hline
+	\end{tabular}
+	\end{center}
+	\label{Open Protocol Meter Option}
+\end{table}
+
+\begin{table}[H]
+	\caption{Pulse meter}
+	\begin{center}
+	\begin{tabular}{| l | l |}
+	\hline
+	Advantages&Disadvantages\\
+	\hline
+	Relatively cheap&Requires a pulse counting device
+	&Minimal information payload
+	\hline
+	\end{tabular}
+	\end{center}
+	\label{Pulse Meter Option}
+\end{table}
+
+\section{Inter-networking}
+
+It is important that any inter-networking gateways be hosted on a dedicated Virtual Private Network, with layer 3 separation from other building management system networks.
+Otherwise, exposure of such inter-networking gateways to the Wide Area Network would pose an unacceptable cybersecurity risk.
+
+\begin{table}[H]
+	\caption{Inter-Networking Gateway}
+	\begin{center}
+	\begin{tabular}{| l | l |}
+	\hline
+	Inter-Networking Standard&Justification\\
+	\hline
+	802.1x&Certificate based network access managed by a Remote Authentication Dial-In User Service (RADIUS)
+	IP version 6&Unique, lower cost and permanent public Internet Protocol (IP) addressing, with native support for IPSec encryption of entire data packets in transit.
+	TLS version 1.3&Most recent release of Transport Layer Security (TLS) protocol, for encryption of data packets transport layer in transit.
+	LDAP&Lightweight Directory Access Protocol (LDAP) is used for accessing and maintaining distributed directory information services over an Internet Protocol (IP) network. A common use of LDAP is to provide a central place to store usernames and passwords.
+	\hline
+	\end{tabular}
+	\end{center}
+	\label{Pulse Meter Option}
+\end{table}
+
+hoshi.property prefers telemetry over Secure Message Queue Telemetry Transport (MQTTS) for the following reasons:
+
+\item[ a)] All inter-networking communications managed from a single endpoint;
+\item[ b)] Lightweight telemetry;
+\item[ c)] No packet loss, even through interruptions to network connectivity.
+
+A MQTTS message broker is available at the URL: mqtts.hoshi.property and may subscribe to secure telemetry, given recognised 802.1X and TLS certificates.
+
+Each inter-networking gateway shall be allocated a Globally Unique Identifier (GUID), serving as the message brokers topic.
+Customers may link available Guid's to service addresses through the hoshi.property user interface.
+
+Each topic requires the following response payload schema:
+
+"$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Utilisation",
+    "description": "Utilisation telemetry",
+    "type": "object",
+    "properties": {
+        "required": ["Guid", "utilisation", "time"],
+        "Guid": {
+            "description": "Globally Unique Identifier inter-networking gateway",
+            "type": "string"
+        },
+		"time": {
+			"desription" : "Universal time telemetry was published to mqtts.hoshi.property"
+			"value" : setUTCDate()
+		}
+		"Utilisation": {
+			{
+            "description": "Electric branch meter",
+			"topic": "EBM",
+			"value": number
+		},
+		{
+            "description": "Electricity meter",
+			"topic": "EM",
+			"value": number
+		},
+		{
+            "description": "Virtual electricity meter",
+			"topic": "EMV",
+			"value": number
+		},
+		{
+            "description": "Flow meter",
+			"topic": "FM",
+			"value": number
+		},
+		{
+            "description": "Gas meter",
+			"topic": "GM",
+			"value": number
+		},
+		{
+            "description": "Virtual gas meter",
+			"topic": "GMV",
+			"value": number
+		},
+		{
+            "description": "Heat meter",
+			"topic": "HM",
+			"value": number
+		},
+		{
+            "description": "virtal heat meter",
+			"topic": "HMV",
+			"value": number
+		},
+		{
+            "description": "water meter",
+			"topic": "WM",
+			"value": number
+		},
+		{
+            "description": "virtual water meter",
+			"topic": "WMV",
+			"value": number
+		}
+	}}
 
 \end{document}
