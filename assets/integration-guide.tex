@@ -37,7 +37,7 @@ The following requirements provide guidance on how to inter-network with such an
 
 The tables below compare the various types of utility meters available.
 
-\begin{table}[H]
+\begin{table}[h!]
 	\caption{Internet-of-Things (IoT) meter}
 	\begin{center}
 	\begin{tabular}{| l | l |}
@@ -53,7 +53,7 @@ The tables below compare the various types of utility meters available.
 	\label{IoT Meter Option}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[h!]
 	\caption{Open building systems communications protocol meter}
 	\begin{center}
 	\begin{tabular}{| l | l |}
@@ -68,7 +68,7 @@ The tables below compare the various types of utility meters available.
 	\label{Open Protocol Meter Option}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[h!]
 	\caption{Pulse meter}
 	\begin{center}
 	\begin{tabular}{| l | l |}
@@ -88,7 +88,7 @@ The tables below compare the various types of utility meters available.
 It is important that any inter-networking gateways be hosted on a dedicated Virtual Private Network, with layer 3 separation from other building management system networks.
 Otherwise, exposure of such inter-networking gateways to the Wide Area Network would pose an unacceptable cybersecurity risk.
 
-\begin{table}[H]
+\begin{table}[h!]
 	\caption{Inter-Networking Gateway}
 	\begin{center}
 	\begin{tabular}{| l | l |}
@@ -116,74 +116,10 @@ A MQTTS message broker is available at the URL: mqtts.hoshi.property and may sub
 Each inter-networking gateway shall be allocated a Globally Unique Identifier (GUID), serving as the message brokers topic.
 Customers may link available Guid's to service addresses through the hoshi.property user interface.
 
-Each topic requires the following response payload schema:
+mqtts.hoshi.property only accepts telemetry that strictly follows the schema:
 
-"$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://example.com/product.schema.json",
-    "title": "Utilisation",
-    "description": "Utilisation telemetry",
-    "type": "object",
-    "properties": {
-        "required": ["Guid", "utilisation", "time"],
-        "Guid": {
-            "description": "Globally Unique Identifier inter-networking gateway",
-            "type": "string"
-        },
-		"time": {
-			"desription" : "Universal time telemetry was published to mqtts.hoshi.property"
-			"value" : setUTCDate()
-		}
-		"Utilisation": {
-			{
-            "description": "Electric branch meter",
-			"topic": "EBM",
-			"value": number
-		},
-		{
-            "description": "Electricity meter",
-			"topic": "EM",
-			"value": number
-		},
-		{
-            "description": "Virtual electricity meter",
-			"topic": "EMV",
-			"value": number
-		},
-		{
-            "description": "Flow meter",
-			"topic": "FM",
-			"value": number
-		},
-		{
-            "description": "Gas meter",
-			"topic": "GM",
-			"value": number
-		},
-		{
-            "description": "Virtual gas meter",
-			"topic": "GMV",
-			"value": number
-		},
-		{
-            "description": "Heat meter",
-			"topic": "HM",
-			"value": number
-		},
-		{
-            "description": "virtal heat meter",
-			"topic": "HMV",
-			"value": number
-		},
-		{
-            "description": "water meter",
-			"topic": "WM",
-			"value": number
-		},
-		{
-            "description": "virtual water meter",
-			"topic": "WMV",
-			"value": number
-		}
-	}}
+../schemas/utilisation.json
+
+
 
 \end{document}
