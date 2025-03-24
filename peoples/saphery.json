@@ -1,10 +1,10 @@
 {
-    "Specialism" : "Lore",
-    "Herald" : "Crescent Moon",
-    "Arms" : "Signat Ring",
-    "GMCOP" : "Loremaster of Hoeth, Prince Richard",
-    "MCOP" : "Magister Juris, Prince Robert",
-    "MCOP" : "Magister Juris, Duchess Anna",
-    "MCOP" : "Magister Juris, Princess Grace",
-    "COP" : "Hyperledger Fabric"
+    "specialism" : "Lore",
+    "herald" : "Crescent Moon",
+    "arms" : "Signat Ring",
+    "gmcop" : "Loremaster of Hoeth, Prince Richard",
+    "mcop" : "Magister Juris, Prince Robert",
+    "mcop" : "Magister Juris, Duchess Anna",
+    "mcop" : "Magister Juris, Princess Grace",
+    "cop" : "Hyperledger Fabric"
 }

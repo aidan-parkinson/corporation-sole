@@ -1,7 +1,7 @@
 {
-    "Specialism" : "Hunting",
-    "Herald" : "A Raven",
-    "Arms" : "A Rifle",
-    "MCOP" : "Commander, Prince Tomas the Earl of Anlec",
-    "COP" : "Lieutenant of the Shadow Warriors, Prince Robin of Nagarythe"
+    "specialism" : "Hunting",
+    "herald" : "A Raven",
+    "arms" : "A Rifle",
+    "mcop" : "Commander, Prince Tomas the Earl of Anlec",
+    "cop" : "Lieutenant of the Shadow Warriors, Prince Robin of Nagarythe"
 }
