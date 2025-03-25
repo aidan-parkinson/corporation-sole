@@ -1,11 +1,11 @@
 {
-    "specialism" : "Navy",
+    "specialism" : "Shipping",
     "herald" : "Leviathan",
     "arms" : "Katana",
-    "gmcop" : "Fleet Admiral, Prince Aidan the Arch Duke of Anirain",
-    "gmcop" : "Commodore, Prince Richard the Duke of Tor Vael",
-    "gmcop" : "Rear Admiral, Prince Dominic the Duke of Mistnare",
-    "gmcop" : "Admiral,  Joseph the Duke of Dawn",
-    "gmcop" : "Admiral,  Jennifer the Princess of Dusk",
-    "cop" : "Clock"
+    "gmcop" : "Prince Aidan the Arch Duke of Anirain",
+    "gmcop" : "Prince Richard the Duke of Tor Vael",
+    "gmcop" : "Prince Dominic the Duke of Mistnare",
+    "gmcop" : "Joseph the Duke of Dawn",
+    "gmcop" : "Jennifer the Princess of Dusk",
+    "cop" : "Colours of Averlorn"
 }
