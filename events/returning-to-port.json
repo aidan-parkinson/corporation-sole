@@ -5,10 +5,8 @@
     "dress": "Bristol Fashion",
     "required" : [
         "Duchess Isabel",
-        "Prince Alex",
-        "Prince Richard"
-    ],
-    "optional" : [
-        "Prince Luke"
+        "Prince Aidan",
+"Princess Alice",
+"Prince Tomás"
     ]
 }
