@@ -1,11 +1,13 @@
 {
-    "specialism" : "Shipping",
+    "specialism" : "Navigation",
     "herald" : "Leviathan",
     "arms" : "Rope",
     "gmcop" : "Prince Aidan the Arch Duke of Anirain",
     "gmcop" : "Prince Richard the Duke of Tor Vael",
     "gmcop" : "Prince Dominic the Duke of Mistnare",
+    "gmcop" : "Prince Joseph the Duke of Tor Andar",
     "gmcop" : "Prince Joseph the Duke of Dawn",
     "gmcop" : "Princess Jennifer the Duchess of Dusk",
+    "gmcop" : "Prince Daniel the Duke of Marienburg",
     "cop" : "Colours of Averlorn"
 }

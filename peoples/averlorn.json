@@ -1,10 +1,12 @@
 {
     "specialism" : "Beauty",
     "herald" : "A Bitten Apple",
-    "arms" : "Paintbrush",
+    "arms" : "Needle",
+    "gmcop" : "Prince Jacob, Duke of Isha's Circle",
     "gmcop" : "The Everqueen, Andreea of Averlorn",
     "mcop" : "Princess Alice, Countess of Pheonix Gate",
     "mcop" : "King Michael of Evershale",
     "mcop" : "Queen Sandra of Evershale",
-    "cop" : "Gillett Instruments"
+    "cop" : "Gillett Instruments",
+    "cop" : "Milo"
 }
