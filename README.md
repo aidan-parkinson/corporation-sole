@@ -13,6 +13,8 @@ GMCOP lead a new guild, arbitrating reasonable smart contracts between the Peopl
 
 `./calculations` : example calculations to inform initiation of ledger.
 
+`./configuration` : consortium policies.
+
 `./definitions` : chaincode definitions to make Official observations.
 
 `./events` : plans for fundraising and stakeholder engagement events.
@@ -21,4 +23,4 @@ GMCOP lead a new guild, arbitrating reasonable smart contracts between the Peopl
 
 `./schemas` : data schemas for Official channels.
 
-`./subsidiares` : plans for operating companies.
+`./subsidiares` : visions for operating companies.
