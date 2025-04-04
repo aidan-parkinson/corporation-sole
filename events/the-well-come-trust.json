@@ -51,11 +51,11 @@
         "NHS" : TRUE,
         "Meta" : FALSE
     },
-    "Chair of the Trustees" : "Prince Dominic",
+    "Chair of the Trustees" : "King Dominic",
     "Trustees" : {
         "Duchy of Cothique"
-        "Duchy of Yvresse?",
-        "Duchy of Chrace?",
+        "Duchy of Yvresse",
+        "Duchy of Chrace",
         "Duchy of Averlorn?",
         "Duchy of Sussex?",
         "Duchy of Cornwall?",
