@@ -1,10 +1,10 @@
 {
     "origin" : "House of Averlorn",
-    "executive-chairman" : "Prince Aidan",
-    "chief-executive-officer" : "Prince Richard",
-    "chief-product-officer": "The Everqueen",
-    "creative-director" : "Prince Luke",
-    "master-luthier" : "King Michael",
+    "executive-chairman" : "Aidan",
+    "chief-executive-officer" : "Richard",
+    "chief-product-officer": "Andreea",
+    "creative-director" : "Luke",
+    "master-luthier" : "Michael",
     "instruments" : {
         "Gillett Contour S Bass" : {
             "wood" : {"Cherry"},

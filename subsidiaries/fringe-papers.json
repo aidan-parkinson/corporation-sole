@@ -1,10 +1,10 @@
 {
     "origin" : "House of Cothique",
-    "executive-chairman" : "Prince Aidan",
-    "editor-of-dawn" : "Prince Joseph",
-    "editor-of-dusk" : "Princess Jennifer",
-    "editor-of-social" : "Prince Richard",
-    "creative-director" : "Prince Luke",
+    "executive-chairman" : "Aidan",
+    "editor-of-dawn" : "Joseph",
+    "editor-of-dusk" : "Jennifer",
+    "editor-of-social" : "Richard",
+    "creative-director" : "Luke",
     "authors" : {
         "Aidan T. Parkinson"
     },

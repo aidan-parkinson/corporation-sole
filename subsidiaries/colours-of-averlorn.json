@@ -1,12 +1,12 @@
 {
     "origin" : "House of Averlorn",
-    "executive-chairman" : "Prince Aidan",
-    "loremaster of hoeth" : "Duchess Anna",
+    "executive-chairman" : "Aidan",
+    "loremaster" : "Anna",
     "resident artists" : {
-    "Queen Jane", 
-    "Princess Alice",
-    "The Everqueen".
-    "King Michael"
+    "Jane", 
+    "Alice",
+    "Andreea".
+    "Michael"
     },
     "offerings" : {
         "Non-fungible tokens",
