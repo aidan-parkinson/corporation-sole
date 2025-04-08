@@ -4,9 +4,9 @@
     "food": "A buffet of delicacies",
     "dress": "Bristol Fashion",
     "required" : [
-        "Duchess Isabel",
-        "Prince Aidan",
-        "Princess Alice",
-        "Prince Tomás"
+        "Isabel",
+        "Aidan",
+        "Alice",
+        "Tomás"
     ]
 }
