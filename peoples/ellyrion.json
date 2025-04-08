@@ -2,6 +2,6 @@
     "specialism" : "Cavalry",
     "motif" : "A White Horse",
     "arms" : "Spurs",
-    "gmcop" : "Prince Luke the Duke of Tor Elyr",
-    "cop" : "Camera"
+    "admin" : "Luke",
+    "client" : "Camera"
 }

@@ -9,14 +9,14 @@
     },
     "Admins": {
         "Type": "ImplicitMeta",
-        "Rule": "ANY GMCOP"
+        "Rule": "ANY ADMIN"
     },
     "LifecycleEndorsement": {
         "Type": "ImplicitMeta",
-        "Rule": "ANY GMCOP"
+        "Rule": "ANY ADMIN"
     },
     "Endorsement": {
         "Type": "ImplicitMeta",
-        "Rule": "ANY MCOP"
+        "Rule": "ANY PEER"
     }   
 }

@@ -2,7 +2,7 @@
     "specialism" : "Capital",
     "motif" : "Frostheart Pheonix",
     "arms" : "Arsenal",
-    "gmcop" : "Governor Christopher of Lothern",
-    "gmcop" : "Prince Daniel the Duke of Marienburg",
-    "cop" : "hoshi.property"
+    "admin" : "Christopher",
+    "admin" : "Daniel",
+    "client" : "hoshi.property"
 }

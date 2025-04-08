@@ -2,12 +2,12 @@
     "specialism" : "Industry",
     "motif" : "Dragon",
     "arms" : "Hammer",
-    "gmcop" : "The High Priest of Tor Caled, Prince Samuel",
-    "gmcop" : "Duchess Anna of Tor Caled",
-    "gmcop" : "Prince Lewis, Dragon Prince of Caledor",
-    "gmcop" : "Prince Charles, Dragon Prince of Caledor",
-    "gmcop" : "Prince Steven, Dragon Prince of Caledor",
-    "mcop" : "Prince Alexander, Dragon Prince of Caledor",
-    "cop" : "Mettle Studio",
-    "cop" : "Formula One"
+    "admin" : "Samuel",
+    "admin" : "Anna",
+    "admin" : "Lewis",
+    "admin" : "Charles",
+    "admin" : "Steven",
+    "peer" : "Alexander",
+    "client" : "Mettle Studio",
+    "client" : "Formula One"
 }

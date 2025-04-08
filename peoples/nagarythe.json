@@ -2,7 +2,7 @@
     "specialism" : "The Hunt",
     "motif" : "A Bat",
     "arms" : "Rifle",
-    "mcop" : "Prince Tomas the Earl of Anlec",
-    "cop" : "Prince Robin of the Shadow Warriors",
-    "cop" : "Halo Studios"
+    "peer" : "Tomas",
+    "client" : "Robin",
+    "client" : "Halo Studios"
 }

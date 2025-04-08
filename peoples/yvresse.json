@@ -2,9 +2,9 @@
     "specialism" : "Port",
     "motif" : "Lighthouse",
     "arms" : "Wine",
-    "mcop" : "King Henry of the Guardian Tower",
-    "mcop" : "Queen Jane of the Guardian Tower",
-    "mcop" : "Duchess Isabel of Tor Yvresse",
-    "cop" : "Basil",
-    "cop" : "Colours of Averlorn"
+    "peer" : "Henry",
+    "peer" : "Jane",
+    "admin" : "Isabel",
+    "client" : "Basil",
+    "client" : "Colours of Averlorn"
 }

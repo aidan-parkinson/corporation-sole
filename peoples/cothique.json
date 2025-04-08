@@ -2,11 +2,11 @@
     "specialism" : "Navigation",
     "motif" : "Leviathan",
     "arms" : "Conch Shell",
-    "gmcop" : "Prince Aidan the Arch Duke of Anirain",
-    "gmcop" : "Prince Richard the Duke of Tor Vael",
-    "gmcop" : "King Dominic of Mistnare",
-    "gmcop" : "Prince Joseph the Duke of Tor Andar",
-    "gmcop" : "Prince Joseph the Duke of Dawn",
-    "gmcop" : "Princess Jennifer the Duchess of Dusk",
-    "cop" : "Fringe Papers"
+    "admin" : "Aidan",
+    "admin" : "Richard",
+    "admin" : "Dominic",
+    "admin" : "Joseph",
+    "admin" : "Joseph",
+    "admin" : "Jennifer",
+    "client" : "Fringe Papers"
 }

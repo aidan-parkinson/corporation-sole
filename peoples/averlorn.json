@@ -2,11 +2,11 @@
     "specialism" : "Beauty",
     "motif" : "Honeycombe",
     "arms" : "Needle",
-    "gmcop" : "Prince Jacob, Duke of Isha's Circle",
-    "gmcop" : "The Everqueen, Andreea of Averlorn",
-    "mcop" : "Princess Alice, Countess of Pheonix Gate",
-    "mcop" : "King Michael of Evershale",
-    "mcop" : "Queen Sandra of Evershale",
-    "cop" : "Gillett Instruments",
-    "cop" : "Milo"
+    "admin" : "Jacob",
+    "admin" : "Andreea",
+    "peer" : "Alice",
+    "peer" : "Michael",
+    "peer" : "Sandra",
+    "client" : "Gillett Instruments",
+    "client" : "Milo"
 }
