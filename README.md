@@ -17,10 +17,6 @@ GMCOP lead a new guild, arbitrating reasonable smart contracts between the Peopl
 
 `./definitions` : chaincode definitions to make Official observations.
 
-`./events` : plans for fundraising and stakeholder engagement events.
-
-`./peoples` : role requirements.
+`./peoples` : House system and voluntary roles.
 
 `./schemas` : data schemas for Official channels.
-
-`./subsidiares` : visions for operating companies.
