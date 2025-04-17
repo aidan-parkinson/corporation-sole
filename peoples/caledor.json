@@ -1,13 +1,5 @@
 {
     "specialism" : "Industry",
     "motif" : "Dragon",
-    "arms" : "Hammer",
-    "admin" : "Samuel",
-    "admin" : "Anna",
-    "admin" : "Lewis",
-    "admin" : "Charles",
-    "admin" : "Steven",
-    "peer" : "Alexander",
-    "client" : "Mettle Studio",
-    "client" : "Formula One"
+    "arms" : "Hammer"
 }

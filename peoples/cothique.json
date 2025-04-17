@@ -2,11 +2,6 @@
     "specialism" : "Navigation",
     "motif" : "Leviathan",
     "arms" : "Conch Shell",
-    "admin" : "Aidan",
-    "admin" : "Richard",
-    "admin" : "Dominic",
-    "admin" : "Joseph",
-    "admin" : "Joseph",
-    "admin" : "Jennifer",
-    "client" : "Fringe Papers"
+    "gmcop" : "Aidan",
+    "cop" : "Fringe Papers"
 }

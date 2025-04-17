@@ -2,9 +2,5 @@
     "specialism" : "Lore",
     "motif" : "Partial Eclipse",
     "arms" : "Katana",
-    "admin" : "Anna",
-    "peer" : "Richard",
-    "peer" : "Robert",
-    "peer" : "Grace",
     "client" : "Hyperledger Fabric"
 }
