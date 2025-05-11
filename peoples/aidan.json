@@ -1,9 +1,9 @@
 {
     "specialism" : "Endurance",
-    "motif" : "Leviathan",
+    "signet" : "Leviathan",
     "arms" : "Conch",
     "stone" : "Aquamarine",
-    "sign" : "../assets/sign-aidan.jpeg",
+    "motif" : "../assets/sign-aidan.jpeg",
     "DCOP" : "Aidan T. Parkinson",
     "COP" : "Fringe Papers",
     "COP" : "https://hoshi.property"
