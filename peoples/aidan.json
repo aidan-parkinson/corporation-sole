@@ -2,8 +2,9 @@
     "specialism" : "Endurance",
     "motif" : "Leviathan",
     "arms" : "Conch",
-    "gem" : "Aquamarine",
-    "gmcop" : "Aidan T. Parkinson",
-    "cop" : "Fringe Papers",
-    "sign" : "../assets/herald-aidan.jpg"
+    "stone" : "Aquamarine",
+    "sign" : "../assets/sign-aidan.jpeg",
+    "DCOP" : "Aidan T. Parkinson",
+    "COP" : "Fringe Papers",
+    "COP" : "https://hoshi.property"
 }
