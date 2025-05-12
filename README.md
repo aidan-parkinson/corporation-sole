@@ -1,5 +1,5 @@
 # corporation-sole
-*Deans of the Commonwealth of Peoples*
+*Dean of the Commonwealth of Peoples*
 
 Amongst other investigative findings, Aidan's original research has advanced the philosophy of law. This yielded a cardinal indicator of global ecosystem quality, notably an original common-sense interpretation of the Hobbesian State of Nature. The Commonwealth Cost of Carbon is just a simple and carefully formulated ratio. As an unusual consequence, Aidan became a legitimate natural representative of the Commonwealth of Peoples by constitution and is currently the sole administrator of its root CA (source of trust): https://github.com/aidan-parkinson/digital-assurance
  
@@ -17,6 +17,6 @@ DCOP lead a new guild, arbitrating reasonable smart contracts between the People
 
 `./definitions` : chaincode definitions for making observations of the World State.
 
-`./peoples` : each peoples led by a Dean.
+`./peoples` : each Peoples led by a Dean.
 
 `./schemas` : data schemas for secure channels.
