@@ -5,6 +5,9 @@
     "stone" : "Aquamarine",
     "motif" : "../assets/motif-aidan.jpeg",
     "DCOP" : "Aidan T. Parkinson",
-    "COP" : "Fringe Papers",
-    "COP" : "https://hoshi.property"
+    "COP" : [
+        "Fringe Papers",
+        "https://hoshi.property",
+        "https://aidantparkinson.com"
+    ]
 }
