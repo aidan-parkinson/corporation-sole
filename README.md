@@ -9,7 +9,7 @@ DCOP lead a new guild, arbitrating reasonable smart contracts between the People
 
 ## Properties
 
-`./assets` : motifs.
+`./motifs` : each Dean and those Peoples led may have a relevant motif.
 
 `./calculations` : example calculations to inform initiation of a ledger.
 
