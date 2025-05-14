@@ -9,7 +9,7 @@ DCOP lead a new guild, arbitrating reasonable smart contracts between the People
 
 ## Properties
 
-`./motifs` : each Dean and those Peoples led may have a relevant motif.
+`./motifs` : each Dean and their Chapter of Peoples may have a relevant motif.
 
 `./calculations` : example calculations to inform initiation of a ledger.
 
@@ -17,6 +17,6 @@ DCOP lead a new guild, arbitrating reasonable smart contracts between the People
 
 `./definitions` : chaincode definitions for making observations of the World State.
 
-`./peoples` : each Peoples led by a Dean.
+`./peoples` : each Dean and their Chapter of Peoples.
 
 `./schemas` : data schemas for secure channels.
