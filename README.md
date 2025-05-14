@@ -13,10 +13,10 @@ DCOP lead a new guild, arbitrating reasonable smart contracts between the People
 
 `./calculations` : example calculations to inform initiation of a ledger.
 
-`./configuration` : consortium policies.
+`./configuration` : Consortium policies.
 
-`./definitions` : chaincode definitions for making observations of the World State.
+`./definitions` : chaincode definitions for Peoples to make observations of the World State.
 
 `./peoples` : each Dean and their Chapter of Peoples.
 
-`./schemas` : data schemas for secure channels.
+`./schemas` : data schemas of chaincode definitions for transactions.
