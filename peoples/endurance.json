@@ -1,8 +1,7 @@
 {
-    "vehicle" : "Endurance",
     "signet" : "Leviathan",
     "arms" : "Conch",
-    "motif" : "../assets/aidan.jpeg",
+    "motif" : "../motifs/endurance.jpeg",
     "DCOP" : "Aidan T. Parkinson",
     "COP" : [
         "Fringe Papers",
