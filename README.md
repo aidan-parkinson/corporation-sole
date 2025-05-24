@@ -9,8 +9,6 @@ DCOP lead a new guild, arbitrating reasonable smart contracts between the People
 
 ## Properties
 
-`./badges` : each Dean and their following School of Peoples embark on a vehicle with it's own badge.
-
 `./calculations` : example calculations to inform initiation of a ledger.
 
 `./configuration` : Consortium policies.
