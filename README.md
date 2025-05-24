@@ -5,7 +5,7 @@ Amongst other investigative findings, Aidan's original research has advanced glo
  
 A Sovereign and enterprise grade inter-network of Hyperledger Fabric nodes could be implemented to endorse performance observations agreed between peers of the World State by chaincode. Initially, two optional secure channels might be available to Masters (MCOP, alias: peers) and Companions (COP, alias: clients) for transactions: "ecosystem", and; "service". Transactions could require endorsement by any MCOP. Any Dean (DCOP, alias: admins) may define new chaincode definitions. Any of these Peoples are entirely free to operate nodes concurrently affiliated with other root CAs. Disputes over observations of ecosystem and service performance are resolved through comprehensive philosophical doctrine, as opposed to political compromise.
  
-DCOP lead a new guild, arbitrating reasonable smart contracts between the Peoples faiths within a diverse inter-network of MCOP. Whilst the Commonwealth of Peoples was initiated by the Chapter of "Endurance", it is hoped that other specialist Chapters may follow this Commonwealth's consortium. 
+DCOP lead a new guild, arbitrating reasonable smart contracts between the Peoples faiths within a diverse inter-network of MCOP. Whilst the Commonwealth of Peoples was initiated by a School specialising in community "Endurance", it is hoped that other Schools may follow into this Commonwealth's consortium. 
 
 ## Properties
 
