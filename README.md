@@ -9,7 +9,7 @@ DCOP lead a new guild, arbitrating reasonable smart contracts between the People
 
 ## Properties
 
-`./motifs` : each Dean and their Chapter of Peoples may have a relevant motif.
+`./badges` : each Dean and their following School of Peoples embark on a vehicle with it's own badge.
 
 `./calculations` : example calculations to inform initiation of a ledger.
 
@@ -17,6 +17,6 @@ DCOP lead a new guild, arbitrating reasonable smart contracts between the People
 
 `./definitions` : chaincode definitions for Peoples to make observations of the World State.
 
-`./peoples` : each Dean and their Chapter of Peoples.
+`./peoples` : each Dean and their School of Peoples.
 
 `./schemas` : data schemas of chaincode definitions for transactions.
