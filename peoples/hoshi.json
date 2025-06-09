@@ -1,5 +1,6 @@
 {
     "signet" : "Leviathan",
+    "emblem" : "../images/hoshi.jpeg",
     "DCOP" : ["Aidan T. Parkinson"],
     "MCOP" : [],
     "COP" : [
