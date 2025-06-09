@@ -1,7 +1,7 @@
 # corporation-sole
 *Dean of the Commonwealth of Peoples*
 
-![Commonwealth Of Peoples Emblem](./images.commonwealthOfPeoples.jpeg)
+![Commonwealth Of Peoples Emblem](images/commonwealthOfPeoples.jpeg)
 
 Amongst other investigative findings, Aidan's original research has advanced global understanding of the limits of community endurance. This yielded a cardinal indicator of global ecosystem performance, notably an original common-sense interpretation of the Hobbesian State of Nature. The Commonwealth Cost of Carbon is just a simple and carefully formulated ratio. A new rating for cardinal observations of service performance consequentially followed. Both formulations were entirely new and fundamental to sustainable development, offering a stable basis to arbitrate prices for service performance contracting worldwide. As an unusual consequence, Aidan became a legitimate natural representative of the Commonwealth of Peoples by constitution and is currently the sole administrator of its root CA (source of trust).
  
