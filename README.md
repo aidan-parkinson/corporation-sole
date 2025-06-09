@@ -18,3 +18,5 @@ DCOP lead a new guild, arbitrating reasonable smart contracts between the People
 `./peoples` : each Dean and their School of Peoples.
 
 `./schemas` : data schemas of chaincode definitions for transactions.
+
+`./images` : emblems for the Commonwealth of Peoples and each Peoples.
