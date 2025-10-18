@@ -1,8 +1,8 @@
 {
     "signet" : "Leviathan",
     "emblem" : "../images/hoshi.jpeg",
-    "DCOP" : ["Aidan T. Parkinson"],
-    "MCOP" : [],
+    "ACOP" : ["Aidan T. Parkinson"],
+    "PCOP" : [],
     "COP" : [
         "https://hoshi.property",
         "https://aidantparkinson.com",
