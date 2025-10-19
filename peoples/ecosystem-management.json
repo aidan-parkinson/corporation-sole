@@ -3,9 +3,5 @@
     "emblem" : "../images/ecosystem-management.jpeg",
     "DCOP" : ["Aidan T. Parkinson"],
     "MCOP" : [],
-    "COP" : [
-        "https://hoshi.property",
-        "https://aidantparkinson.com",
-        "https://commonwealthofpeoples.org"
-    ]
+    "COP" : []
 }
