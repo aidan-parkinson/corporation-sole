@@ -1,7 +1,7 @@
 {
     "signet" : "Leviathan",
     "emblem" : "../images/ecosystem-management.jpeg",
-    "DCOP" : ["Aidan T. Parkinson"],
+    "ACOP" : ["Aidan T. Parkinson"],
     "MCOP" : [],
     "COP" : []
 }
