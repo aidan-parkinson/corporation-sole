@@ -3,7 +3,7 @@
 
 ![Commonwealth School of Ecosystem Management Emblem](images/ecosystem-management.jpeg)
 
-Aidan experienced a reasonable breakthrough with his independent post-doctoral research into ecosystem management. This resulted in the initiation of a constitution from the original position for a new inter-networking trade association, related school and root source of trust.
+Aidan experienced a reasonable breakthrough with his independent post-doctoral research into ecosystem management. This resulted in the initiation of a constitution from the original position for a new inter-networking trade association known as the Commonwealth of Peoples. A related school and root source of trust has followed.
  
 A new enterprise grade inter-network of Hyperledger Fabric nodes could be implemented to endorse performance observations agreed between peers of the World State by chaincode. Initially, two optional secure channels might be available to Masters (MCOP, alias: peers) and Companions (COP, alias: clients) for transactions: "ecosystem", and; "service". Transactions could require endorsement by any MCOP. Any Arbiter (ACOP, alias: admins) may define new chaincode definitions. Any of these Peoples are entirely free to operate nodes concurrently affiliated with other root CAs. Disputes over observations of ecosystem and service performance are resolved through comprehensive philosophical doctrine, as opposed to political compromise.
  
