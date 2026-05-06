@@ -9,11 +9,11 @@
     },
     "Admins": {
         "Type": "ImplicitMeta",
-        "Rule": "ANY GMCOP"
+        "Rule": "ANY FCOP"
     },
     "LifecycleEndorsement": {
         "Type": "ImplicitMeta",
-        "Rule": "ANY GMCOP"
+        "Rule": "ANY FCOP"
     },
     "Endorsement": {
         "Type": "ImplicitMeta",
