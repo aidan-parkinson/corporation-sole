@@ -13,10 +13,10 @@
     },
     "LifecycleEndorsement": {
         "Type": "ImplicitMeta",
-        "Rule": "ANY FCOP"
+        "Rule": "ANY Trustee"
     },
     "Endorsement": {
         "Type": "ImplicitMeta",
-        "Rule": "ANY MCOP"
+        "Rule": "ANY FCOP"
     }   
 }
