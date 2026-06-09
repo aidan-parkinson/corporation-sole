@@ -1,7 +1,7 @@
 {
     "signet" : "Leviathan",
     "emblem" : "../images/ecosystem-management.jpeg",
-    "Trustee" : ["Aidan T. Parkinson"],
+    "Member" : ["Aidan T. Parkinson"],
     "FCOP" : ["Aidan T. Parkinson"],
     "COP" : []
 }
